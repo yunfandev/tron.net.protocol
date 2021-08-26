@@ -25,10 +25,10 @@ namespace Tron.Net.Protocol {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cid0cm9ucHJvdG9jb2wvY29yZS9jb250cmFjdC9jb21tb24ucHJvdG8SCHBy",
-            "b3RvY29sKikKDFJlc291cmNlQ29kZRINCglCQU5EV0lEVEgQABIKCgZFTkVS",
-            "R1kQAUJZChhvcmcudHJvbi5wcm90b3MuY29udHJhY3RaKWdpdGh1Yi5jb20v",
-            "dHJvbnByb3RvY29sL2dycGMtZ2F0ZXdheS9jb3JlqgIRVHJvbi5OZXQuUHJv",
-            "dG9jb2xiBnByb3RvMw=="));
+            "b3RvY29sKjkKDFJlc291cmNlQ29kZRINCglCQU5EV0lEVEgQABIKCgZFTkVS",
+            "R1kQARIOCgpUUk9OX1BPV0VSEAJCWQoYb3JnLnRyb24ucHJvdG9zLmNvbnRy",
+            "YWN0WilnaXRodWIuY29tL3Ryb25wcm90b2NvbC9ncnBjLWdhdGV3YXkvY29y",
+            "ZaoCEVRyb24uTmV0LlByb3RvY29sYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Tron.Net.Protocol.ResourceCode), }, null, null));
@@ -40,6 +40,7 @@ namespace Tron.Net.Protocol {
   public enum ResourceCode {
     [pbr::OriginalName("BANDWIDTH")] Bandwidth = 0,
     [pbr::OriginalName("ENERGY")] Energy = 1,
+    [pbr::OriginalName("TRON_POWER")] TronPower = 2,
   }
 
   #endregion

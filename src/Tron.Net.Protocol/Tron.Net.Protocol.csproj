@@ -1,16 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;net45;net46</TargetFrameworks>
-    <Version>4.0.0</Version>
-    <Authors>https://github.com/griffo-io</Authors>
-    <Company>https://github.com/griffo-io</Company>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <Version>4.3.0</Version>
+    <Authors>https://github.com/yunfandev</Authors>
+    <Company>https://github.com/yunfandev</Company>
     <Product>Tron.Net.Protocol</Product>
-    <Copyright>https://github.com/griffo-io</Copyright>
+    <Copyright>https://github.com/yunfandev</Copyright>
     <Description>Tron.Net.Protocol is a port in .NET standard of the Tron protocol</Description>
-    <LicenseUrl>https://raw.githubusercontent.com/griffo-io/tron.net.protocol/master/README.md</LicenseUrl>
-    <PackageProjectUrl>https://github.com/griffo-io/tron.net.protocol</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/griffo-io/tron.net.protocol</RepositoryUrl>   
+    <LicenseUrl>https://raw.githubusercontent.com/yunfandev/tron.net.protocol/master/README.md</LicenseUrl>
+    <PackageProjectUrl>https://github.com/yunfandev/tron.net.protocol</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/yunfandev/tron.net.protocol</RepositoryUrl>   
   </PropertyGroup>
   
   <ItemGroup>
@@ -19,11 +19,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Google.Api.CommonProtos" Version="1.7.0" />
-    <PackageReference Include="Google.Protobuf" Version="3.11.2" />
-    <PackageReference Include="Google.Protobuf.Tools" Version="3.11.2" />
-    <PackageReference Include="Grpc" Version="2.26.0" />
-    <PackageReference Include="Grpc.Tools" Version="2.26.0" />
+    <PackageReference Include="Google.Api.CommonProtos" Version="2.3.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.17.3" />
+    <PackageReference Include="Google.Protobuf.Tools" Version="3.17.2" />
+    <PackageReference Include="Grpc.Core.Api" Version="2.39.1" />
+    <PackageReference Include="Grpc.Tools" Version="2.39.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">

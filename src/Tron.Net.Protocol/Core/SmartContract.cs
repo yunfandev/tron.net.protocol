@@ -25,51 +25,55 @@ namespace Tron.Net.Protocol {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci90cm9ucHJvdG9jb2wvY29yZS9jb250cmFjdC9zbWFydF9jb250cmFjdC5w",
-            "cm90bxIIcHJvdG9jb2wigwcKDVNtYXJ0Q29udHJhY3QSFgoOb3JpZ2luX2Fk",
-            "ZHJlc3MYASABKAwSGAoQY29udHJhY3RfYWRkcmVzcxgCIAEoDBIoCgNhYmkY",
-            "AyABKAsyGy5wcm90b2NvbC5TbWFydENvbnRyYWN0LkFCSRIQCghieXRlY29k",
-            "ZRgEIAEoDBISCgpjYWxsX3ZhbHVlGAUgASgDEiUKHWNvbnN1bWVfdXNlcl9y",
-            "ZXNvdXJjZV9wZXJjZW50GAYgASgDEgwKBG5hbWUYByABKAkSGwoTb3JpZ2lu",
-            "X2VuZXJneV9saW1pdBgIIAEoAxIRCgljb2RlX2hhc2gYCSABKAwSEAoIdHJ4",
-            "X2hhc2gYCiABKAwa+AQKA0FCSRIxCgZlbnRyeXMYASADKAsyIS5wcm90b2Nv",
-            "bC5TbWFydENvbnRyYWN0LkFCSS5FbnRyeRq9BAoFRW50cnkSEQoJYW5vbnlt",
-            "b3VzGAEgASgIEhAKCGNvbnN0YW50GAIgASgIEgwKBG5hbWUYAyABKAkSNwoG",
-            "aW5wdXRzGAQgAygLMicucHJvdG9jb2wuU21hcnRDb250cmFjdC5BQkkuRW50",
-            "cnkuUGFyYW0SOAoHb3V0cHV0cxgFIAMoCzInLnByb3RvY29sLlNtYXJ0Q29u",
-            "dHJhY3QuQUJJLkVudHJ5LlBhcmFtEjkKBHR5cGUYBiABKA4yKy5wcm90b2Nv",
-            "bC5TbWFydENvbnRyYWN0LkFCSS5FbnRyeS5FbnRyeVR5cGUSDwoHcGF5YWJs",
-            "ZRgHIAEoCBJOCg9zdGF0ZU11dGFiaWxpdHkYCCABKA4yNS5wcm90b2NvbC5T",
-            "bWFydENvbnRyYWN0LkFCSS5FbnRyeS5TdGF0ZU11dGFiaWxpdHlUeXBlGjQK",
-            "BVBhcmFtEg8KB2luZGV4ZWQYASABKAgSDAoEbmFtZRgCIAEoCRIMCgR0eXBl",
-            "GAMgASgJIlkKCUVudHJ5VHlwZRIUChBVbmtub3duRW50cnlUeXBlEAASDwoL",
-            "Q29uc3RydWN0b3IQARIMCghGdW5jdGlvbhACEgkKBUV2ZW50EAMSDAoIRmFs",
-            "bGJhY2sQBCJhChNTdGF0ZU11dGFiaWxpdHlUeXBlEhkKFVVua25vd25NdXRh",
-            "YmlsaXR5VHlwZRAAEggKBFB1cmUQARIICgRWaWV3EAISDgoKTm9ucGF5YWJs",
-            "ZRADEgsKB1BheWFibGUQBCKHAQoTQ3JlYXRlU21hcnRDb250cmFjdBIVCg1v",
-            "d25lcl9hZGRyZXNzGAEgASgMEi0KDG5ld19jb250cmFjdBgCIAEoCzIXLnBy",
-            "b3RvY29sLlNtYXJ0Q29udHJhY3QSGAoQY2FsbF90b2tlbl92YWx1ZRgDIAEo",
-            "AxIQCgh0b2tlbl9pZBgEIAEoAyKVAQoUVHJpZ2dlclNtYXJ0Q29udHJhY3QS",
-            "FQoNb3duZXJfYWRkcmVzcxgBIAEoDBIYChBjb250cmFjdF9hZGRyZXNzGAIg",
-            "ASgMEhIKCmNhbGxfdmFsdWUYAyABKAMSDAoEZGF0YRgEIAEoDBIYChBjYWxs",
-            "X3Rva2VuX3ZhbHVlGAUgASgDEhAKCHRva2VuX2lkGAYgASgDIkMKEENsZWFy",
-            "QUJJQ29udHJhY3QSFQoNb3duZXJfYWRkcmVzcxgBIAEoDBIYChBjb250cmFj",
-            "dF9hZGRyZXNzGAIgASgMIm8KFVVwZGF0ZVNldHRpbmdDb250cmFjdBIVCg1v",
+            "cm90bxIIcHJvdG9jb2waD2NvcmUvVHJvbi5wcm90byKbBwoNU21hcnRDb250",
+            "cmFjdBIWCg5vcmlnaW5fYWRkcmVzcxgBIAEoDBIYChBjb250cmFjdF9hZGRy",
+            "ZXNzGAIgASgMEigKA2FiaRgDIAEoCzIbLnByb3RvY29sLlNtYXJ0Q29udHJh",
+            "Y3QuQUJJEhAKCGJ5dGVjb2RlGAQgASgMEhIKCmNhbGxfdmFsdWUYBSABKAMS",
+            "JQodY29uc3VtZV91c2VyX3Jlc291cmNlX3BlcmNlbnQYBiABKAMSDAoEbmFt",
+            "ZRgHIAEoCRIbChNvcmlnaW5fZW5lcmd5X2xpbWl0GAggASgDEhEKCWNvZGVf",
+            "aGFzaBgJIAEoDBIQCgh0cnhfaGFzaBgKIAEoDBqQBQoDQUJJEjEKBmVudHJ5",
+            "cxgBIAMoCzIhLnByb3RvY29sLlNtYXJ0Q29udHJhY3QuQUJJLkVudHJ5GtUE",
+            "CgVFbnRyeRIRCglhbm9ueW1vdXMYASABKAgSEAoIY29uc3RhbnQYAiABKAgS",
+            "DAoEbmFtZRgDIAEoCRI3CgZpbnB1dHMYBCADKAsyJy5wcm90b2NvbC5TbWFy",
+            "dENvbnRyYWN0LkFCSS5FbnRyeS5QYXJhbRI4CgdvdXRwdXRzGAUgAygLMicu",
+            "cHJvdG9jb2wuU21hcnRDb250cmFjdC5BQkkuRW50cnkuUGFyYW0SOQoEdHlw",
+            "ZRgGIAEoDjIrLnByb3RvY29sLlNtYXJ0Q29udHJhY3QuQUJJLkVudHJ5LkVu",
+            "dHJ5VHlwZRIPCgdwYXlhYmxlGAcgASgIEk4KD3N0YXRlTXV0YWJpbGl0eRgI",
+            "IAEoDjI1LnByb3RvY29sLlNtYXJ0Q29udHJhY3QuQUJJLkVudHJ5LlN0YXRl",
+            "TXV0YWJpbGl0eVR5cGUaNAoFUGFyYW0SDwoHaW5kZXhlZBgBIAEoCBIMCgRu",
+            "YW1lGAIgASgJEgwKBHR5cGUYAyABKAkicQoJRW50cnlUeXBlEhQKEFVua25v",
+            "d25FbnRyeVR5cGUQABIPCgtDb25zdHJ1Y3RvchABEgwKCEZ1bmN0aW9uEAIS",
+            "CQoFRXZlbnQQAxIMCghGYWxsYmFjaxAEEgsKB1JlY2VpdmUQBRIJCgVFcnJv",
+            "chAGImEKE1N0YXRlTXV0YWJpbGl0eVR5cGUSGQoVVW5rbm93bk11dGFiaWxp",
+            "dHlUeXBlEAASCAoEUHVyZRABEggKBFZpZXcQAhIOCgpOb25wYXlhYmxlEAMS",
+            "CwoHUGF5YWJsZRAEIocBChNDcmVhdGVTbWFydENvbnRyYWN0EhUKDW93bmVy",
+            "X2FkZHJlc3MYASABKAwSLQoMbmV3X2NvbnRyYWN0GAIgASgLMhcucHJvdG9j",
+            "b2wuU21hcnRDb250cmFjdBIYChBjYWxsX3Rva2VuX3ZhbHVlGAMgASgDEhAK",
+            "CHRva2VuX2lkGAQgASgDIpUBChRUcmlnZ2VyU21hcnRDb250cmFjdBIVCg1v",
             "d25lcl9hZGRyZXNzGAEgASgMEhgKEGNvbnRyYWN0X2FkZHJlc3MYAiABKAwS",
-            "JQodY29uc3VtZV91c2VyX3Jlc291cmNlX3BlcmNlbnQYAyABKAMiaQoZVXBk",
-            "YXRlRW5lcmd5TGltaXRDb250cmFjdBIVCg1vd25lcl9hZGRyZXNzGAEgASgM",
-            "EhgKEGNvbnRyYWN0X2FkZHJlc3MYAiABKAwSGwoTb3JpZ2luX2VuZXJneV9s",
-            "aW1pdBgDIAEoA0JZChhvcmcudHJvbi5wcm90b3MuY29udHJhY3RaKWdpdGh1",
-            "Yi5jb20vdHJvbnByb3RvY29sL2dycGMtZ2F0ZXdheS9jb3JlqgIRVHJvbi5O",
-            "ZXQuUHJvdG9jb2xiBnByb3RvMw=="));
+            "EgoKY2FsbF92YWx1ZRgDIAEoAxIMCgRkYXRhGAQgASgMEhgKEGNhbGxfdG9r",
+            "ZW5fdmFsdWUYBSABKAMSEAoIdG9rZW5faWQYBiABKAMiQwoQQ2xlYXJBQklD",
+            "b250cmFjdBIVCg1vd25lcl9hZGRyZXNzGAEgASgMEhgKEGNvbnRyYWN0X2Fk",
+            "ZHJlc3MYAiABKAwibwoVVXBkYXRlU2V0dGluZ0NvbnRyYWN0EhUKDW93bmVy",
+            "X2FkZHJlc3MYASABKAwSGAoQY29udHJhY3RfYWRkcmVzcxgCIAEoDBIlCh1j",
+            "b25zdW1lX3VzZXJfcmVzb3VyY2VfcGVyY2VudBgDIAEoAyJpChlVcGRhdGVF",
+            "bmVyZ3lMaW1pdENvbnRyYWN0EhUKDW93bmVyX2FkZHJlc3MYASABKAwSGAoQ",
+            "Y29udHJhY3RfYWRkcmVzcxgCIAEoDBIbChNvcmlnaW5fZW5lcmd5X2xpbWl0",
+            "GAMgASgDImAKGFNtYXJ0Q29udHJhY3REYXRhV3JhcHBlchIvCg5zbWFydF9j",
+            "b250cmFjdBgBIAEoCzIXLnByb3RvY29sLlNtYXJ0Q29udHJhY3QSEwoLcnVu",
+            "dGltZWNvZGUYAiABKAxCWQoYb3JnLnRyb24ucHJvdG9zLmNvbnRyYWN0Wiln",
+            "aXRodWIuY29tL3Ryb25wcm90b2NvbC9ncnBjLWdhdGV3YXkvY29yZaoCEVRy",
+            "b24uTmV0LlByb3RvY29sYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Tron.Net.Protocol.TronReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.SmartContract), global::Tron.Net.Protocol.SmartContract.Parser, new[]{ "OriginAddress", "ContractAddress", "Abi", "Bytecode", "CallValue", "ConsumeUserResourcePercent", "Name", "OriginEnergyLimit", "CodeHash", "TrxHash" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.SmartContract.Types.ABI), global::Tron.Net.Protocol.SmartContract.Types.ABI.Parser, new[]{ "Entrys" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry), global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry.Parser, new[]{ "Anonymous", "Constant", "Name", "Inputs", "Outputs", "Type", "Payable", "StateMutability" }, null, new[]{ typeof(global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry.Types.EntryType), typeof(global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry.Types.StateMutabilityType) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry.Types.Param), global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry.Types.Param.Parser, new[]{ "Indexed", "Name", "Type" }, null, null, null, null)})})}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.CreateSmartContract), global::Tron.Net.Protocol.CreateSmartContract.Parser, new[]{ "OwnerAddress", "NewContract", "CallTokenValue", "TokenId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.TriggerSmartContract), global::Tron.Net.Protocol.TriggerSmartContract.Parser, new[]{ "OwnerAddress", "ContractAddress", "CallValue", "Data", "CallTokenValue", "TokenId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.ClearABIContract), global::Tron.Net.Protocol.ClearABIContract.Parser, new[]{ "OwnerAddress", "ContractAddress" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.UpdateSettingContract), global::Tron.Net.Protocol.UpdateSettingContract.Parser, new[]{ "OwnerAddress", "ContractAddress", "ConsumeUserResourcePercent" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.UpdateEnergyLimitContract), global::Tron.Net.Protocol.UpdateEnergyLimitContract.Parser, new[]{ "OwnerAddress", "ContractAddress", "OriginEnergyLimit" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.UpdateEnergyLimitContract), global::Tron.Net.Protocol.UpdateEnergyLimitContract.Parser, new[]{ "OwnerAddress", "ContractAddress", "OriginEnergyLimit" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.SmartContractDataWrapper), global::Tron.Net.Protocol.SmartContractDataWrapper.Parser, new[]{ "SmartContract", "Runtimecode" }, null, null, null, null)
           }));
     }
     #endregion
@@ -905,6 +909,8 @@ namespace Tron.Net.Protocol {
                 [pbr::OriginalName("Function")] Function = 2,
                 [pbr::OriginalName("Event")] Event = 3,
                 [pbr::OriginalName("Fallback")] Fallback = 4,
+                [pbr::OriginalName("Receive")] Receive = 5,
+                [pbr::OriginalName("Error")] Error = 6,
               }
 
               public enum StateMutabilityType {
@@ -2125,6 +2131,169 @@ namespace Tron.Net.Protocol {
           }
           case 24: {
             OriginEnergyLimit = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class SmartContractDataWrapper : pb::IMessage<SmartContractDataWrapper> {
+    private static readonly pb::MessageParser<SmartContractDataWrapper> _parser = new pb::MessageParser<SmartContractDataWrapper>(() => new SmartContractDataWrapper());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SmartContractDataWrapper> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Tron.Net.Protocol.SmartContractReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SmartContractDataWrapper() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SmartContractDataWrapper(SmartContractDataWrapper other) : this() {
+      smartContract_ = other.smartContract_ != null ? other.smartContract_.Clone() : null;
+      runtimecode_ = other.runtimecode_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SmartContractDataWrapper Clone() {
+      return new SmartContractDataWrapper(this);
+    }
+
+    /// <summary>Field number for the "smart_contract" field.</summary>
+    public const int SmartContractFieldNumber = 1;
+    private global::Tron.Net.Protocol.SmartContract smartContract_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Tron.Net.Protocol.SmartContract SmartContract {
+      get { return smartContract_; }
+      set {
+        smartContract_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "runtimecode" field.</summary>
+    public const int RuntimecodeFieldNumber = 2;
+    private pb::ByteString runtimecode_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString Runtimecode {
+      get { return runtimecode_; }
+      set {
+        runtimecode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SmartContractDataWrapper);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SmartContractDataWrapper other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(SmartContract, other.SmartContract)) return false;
+      if (Runtimecode != other.Runtimecode) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (smartContract_ != null) hash ^= SmartContract.GetHashCode();
+      if (Runtimecode.Length != 0) hash ^= Runtimecode.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (smartContract_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(SmartContract);
+      }
+      if (Runtimecode.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteBytes(Runtimecode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (smartContract_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SmartContract);
+      }
+      if (Runtimecode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Runtimecode);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SmartContractDataWrapper other) {
+      if (other == null) {
+        return;
+      }
+      if (other.smartContract_ != null) {
+        if (smartContract_ == null) {
+          SmartContract = new global::Tron.Net.Protocol.SmartContract();
+        }
+        SmartContract.MergeFrom(other.SmartContract);
+      }
+      if (other.Runtimecode.Length != 0) {
+        Runtimecode = other.Runtimecode;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (smartContract_ == null) {
+              SmartContract = new global::Tron.Net.Protocol.SmartContract();
+            }
+            input.ReadMessage(SmartContract);
+            break;
+          }
+          case 18: {
+            Runtimecode = input.ReadBytes();
             break;
           }
         }

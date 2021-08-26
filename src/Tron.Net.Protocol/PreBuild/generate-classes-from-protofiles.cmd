@@ -31,6 +31,7 @@ set TronprotocolProtosDir=%TronprotocolProtosDir:"=%
 "%ProtobufProtocDir%protoc.exe" -I="%ProtosRootDir%" -I="%ProtosRootDir%\protobuf\src" -I="%TronprotocolProtosDir%" --csharp_out="%ProjectDir%Core" "%TronprotocolProtosDir%\core\contract\balance_contract.proto"
 "%ProtobufProtocDir%protoc.exe" -I="%ProtosRootDir%" -I="%ProtosRootDir%\protobuf\src" -I="%TronprotocolProtosDir%" --csharp_out="%ProjectDir%Core" "%TronprotocolProtosDir%\core\contract\common.proto"
 "%ProtobufProtocDir%protoc.exe" -I="%ProtosRootDir%" -I="%ProtosRootDir%\protobuf\src" -I="%TronprotocolProtosDir%" --csharp_out="%ProjectDir%Core" "%TronprotocolProtosDir%\core\contract\exchange_contract.proto"
+"%ProtobufProtocDir%protoc.exe" -I="%ProtosRootDir%" -I="%ProtosRootDir%\protobuf\src" -I="%TronprotocolProtosDir%" --csharp_out="%ProjectDir%Core" "%TronprotocolProtosDir%\core\contract\market_contract.proto"
 "%ProtobufProtocDir%protoc.exe" -I="%ProtosRootDir%" -I="%ProtosRootDir%\protobuf\src" -I="%TronprotocolProtosDir%" --csharp_out="%ProjectDir%Core" "%TronprotocolProtosDir%\core\contract\proposal_contract.proto"
 "%ProtobufProtocDir%protoc.exe" -I="%ProtosRootDir%" -I="%ProtosRootDir%\protobuf\src" -I="%TronprotocolProtosDir%" --csharp_out="%ProjectDir%Core" "%TronprotocolProtosDir%\core\contract\shield_contract.proto"
 "%ProtobufProtocDir%protoc.exe" -I="%ProtosRootDir%" -I="%ProtosRootDir%\protobuf\src" -I="%TronprotocolProtosDir%" --csharp_out="%ProjectDir%Core" "%TronprotocolProtosDir%\core\contract\smart_contract.proto"

@@ -13,6 +13,10 @@ namespace Tron.Net.Protocol {
     static readonly string __ServiceName = "protocol.Wallet";
 
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.Account> __Marshaller_protocol_Account = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.Account.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.AccountBalanceRequest> __Marshaller_protocol_AccountBalanceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.AccountBalanceRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.AccountBalanceResponse> __Marshaller_protocol_AccountBalanceResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.AccountBalanceResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.BlockBalanceTrace.Types.BlockIdentifier> __Marshaller_protocol_BlockBalanceTrace_BlockIdentifier = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.BlockBalanceTrace.Types.BlockIdentifier.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.BlockBalanceTrace> __Marshaller_protocol_BlockBalanceTrace = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.BlockBalanceTrace.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.TransferContract> __Marshaller_protocol_TransferContract = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.TransferContract.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.Transaction> __Marshaller_protocol_Transaction = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.Transaction.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.TransactionExtention> __Marshaller_protocol_TransactionExtention = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.TransactionExtention.Parser.ParseFrom);
@@ -43,12 +47,19 @@ namespace Tron.Net.Protocol {
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.ExchangeInjectContract> __Marshaller_protocol_ExchangeInjectContract = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.ExchangeInjectContract.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.ExchangeWithdrawContract> __Marshaller_protocol_ExchangeWithdrawContract = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.ExchangeWithdrawContract.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.ExchangeTransactionContract> __Marshaller_protocol_ExchangeTransactionContract = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.ExchangeTransactionContract.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.MarketSellAssetContract> __Marshaller_protocol_MarketSellAssetContract = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.MarketSellAssetContract.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.MarketCancelOrderContract> __Marshaller_protocol_MarketCancelOrderContract = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.MarketCancelOrderContract.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.BytesMessage> __Marshaller_protocol_BytesMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.BytesMessage.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.MarketOrder> __Marshaller_protocol_MarketOrder = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.MarketOrder.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.MarketOrderList> __Marshaller_protocol_MarketOrderList = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.MarketOrderList.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.MarketOrderPair> __Marshaller_protocol_MarketOrderPair = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.MarketOrderPair.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.MarketPriceList> __Marshaller_protocol_MarketPriceList = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.MarketPriceList.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.EmptyMessage> __Marshaller_protocol_EmptyMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.EmptyMessage.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.MarketOrderPairList> __Marshaller_protocol_MarketOrderPairList = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.MarketOrderPairList.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.NodeList> __Marshaller_protocol_NodeList = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.NodeList.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.AssetIssueList> __Marshaller_protocol_AssetIssueList = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.AssetIssueList.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.AccountNetMessage> __Marshaller_protocol_AccountNetMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.AccountNetMessage.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.AccountResourceMessage> __Marshaller_protocol_AccountResourceMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.AccountResourceMessage.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Tron.Net.Protocol.BytesMessage> __Marshaller_protocol_BytesMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.BytesMessage.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.Block> __Marshaller_protocol_Block = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.Block.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.BlockExtention> __Marshaller_protocol_BlockExtention = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.BlockExtention.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.NumberMessage> __Marshaller_protocol_NumberMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.NumberMessage.Parser.ParseFrom);
@@ -57,6 +68,7 @@ namespace Tron.Net.Protocol {
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.BlockListExtention> __Marshaller_protocol_BlockListExtention = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.BlockListExtention.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.CreateSmartContract> __Marshaller_protocol_CreateSmartContract = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.CreateSmartContract.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.SmartContract> __Marshaller_protocol_SmartContract = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.SmartContract.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.SmartContractDataWrapper> __Marshaller_protocol_SmartContractDataWrapper = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.SmartContractDataWrapper.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.TriggerSmartContract> __Marshaller_protocol_TriggerSmartContract = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.TriggerSmartContract.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.ClearABIContract> __Marshaller_protocol_ClearABIContract = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.ClearABIContract.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.WitnessList> __Marshaller_protocol_WitnessList = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.WitnessList.Parser.ParseFrom);
@@ -112,6 +124,7 @@ namespace Tron.Net.Protocol {
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.NullifierResult> __Marshaller_protocol_NullifierResult = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.NullifierResult.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.ShieldedTRC20TriggerContractParameters> __Marshaller_protocol_ShieldedTRC20TriggerContractParameters = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.ShieldedTRC20TriggerContractParameters.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.TransactionInfoList> __Marshaller_protocol_TransactionInfoList = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.TransactionInfoList.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.TransactionIdList> __Marshaller_protocol_TransactionIdList = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.TransactionIdList.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Tron.Net.Protocol.Account, global::Tron.Net.Protocol.Account> __Method_GetAccount = new grpc::Method<global::Tron.Net.Protocol.Account, global::Tron.Net.Protocol.Account>(
         grpc::MethodType.Unary,
@@ -126,6 +139,20 @@ namespace Tron.Net.Protocol {
         "GetAccountById",
         __Marshaller_protocol_Account,
         __Marshaller_protocol_Account);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.AccountBalanceRequest, global::Tron.Net.Protocol.AccountBalanceResponse> __Method_GetAccountBalance = new grpc::Method<global::Tron.Net.Protocol.AccountBalanceRequest, global::Tron.Net.Protocol.AccountBalanceResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetAccountBalance",
+        __Marshaller_protocol_AccountBalanceRequest,
+        __Marshaller_protocol_AccountBalanceResponse);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.BlockBalanceTrace.Types.BlockIdentifier, global::Tron.Net.Protocol.BlockBalanceTrace> __Method_GetBlockBalanceTrace = new grpc::Method<global::Tron.Net.Protocol.BlockBalanceTrace.Types.BlockIdentifier, global::Tron.Net.Protocol.BlockBalanceTrace>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetBlockBalanceTrace",
+        __Marshaller_protocol_BlockBalanceTrace_BlockIdentifier,
+        __Marshaller_protocol_BlockBalanceTrace);
 
     static readonly grpc::Method<global::Tron.Net.Protocol.TransferContract, global::Tron.Net.Protocol.Transaction> __Method_CreateTransaction = new grpc::Method<global::Tron.Net.Protocol.TransferContract, global::Tron.Net.Protocol.Transaction>(
         grpc::MethodType.Unary,
@@ -421,6 +448,55 @@ namespace Tron.Net.Protocol {
         __Marshaller_protocol_ExchangeTransactionContract,
         __Marshaller_protocol_TransactionExtention);
 
+    static readonly grpc::Method<global::Tron.Net.Protocol.MarketSellAssetContract, global::Tron.Net.Protocol.TransactionExtention> __Method_MarketSellAsset = new grpc::Method<global::Tron.Net.Protocol.MarketSellAssetContract, global::Tron.Net.Protocol.TransactionExtention>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "MarketSellAsset",
+        __Marshaller_protocol_MarketSellAssetContract,
+        __Marshaller_protocol_TransactionExtention);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.MarketCancelOrderContract, global::Tron.Net.Protocol.TransactionExtention> __Method_MarketCancelOrder = new grpc::Method<global::Tron.Net.Protocol.MarketCancelOrderContract, global::Tron.Net.Protocol.TransactionExtention>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "MarketCancelOrder",
+        __Marshaller_protocol_MarketCancelOrderContract,
+        __Marshaller_protocol_TransactionExtention);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.MarketOrder> __Method_GetMarketOrderById = new grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.MarketOrder>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetMarketOrderById",
+        __Marshaller_protocol_BytesMessage,
+        __Marshaller_protocol_MarketOrder);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.MarketOrderList> __Method_GetMarketOrderByAccount = new grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.MarketOrderList>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetMarketOrderByAccount",
+        __Marshaller_protocol_BytesMessage,
+        __Marshaller_protocol_MarketOrderList);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.MarketOrderPair, global::Tron.Net.Protocol.MarketPriceList> __Method_GetMarketPriceByPair = new grpc::Method<global::Tron.Net.Protocol.MarketOrderPair, global::Tron.Net.Protocol.MarketPriceList>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetMarketPriceByPair",
+        __Marshaller_protocol_MarketOrderPair,
+        __Marshaller_protocol_MarketPriceList);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.MarketOrderPair, global::Tron.Net.Protocol.MarketOrderList> __Method_GetMarketOrderListByPair = new grpc::Method<global::Tron.Net.Protocol.MarketOrderPair, global::Tron.Net.Protocol.MarketOrderList>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetMarketOrderListByPair",
+        __Marshaller_protocol_MarketOrderPair,
+        __Marshaller_protocol_MarketOrderList);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.MarketOrderPairList> __Method_GetMarketPairList = new grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.MarketOrderPairList>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetMarketPairList",
+        __Marshaller_protocol_EmptyMessage,
+        __Marshaller_protocol_MarketOrderPairList);
+
     static readonly grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NodeList> __Method_ListNodes = new grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NodeList>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -560,6 +636,13 @@ namespace Tron.Net.Protocol {
         "GetContract",
         __Marshaller_protocol_BytesMessage,
         __Marshaller_protocol_SmartContract);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.SmartContractDataWrapper> __Method_GetContractInfo = new grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.SmartContractDataWrapper>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetContractInfo",
+        __Marshaller_protocol_BytesMessage,
+        __Marshaller_protocol_SmartContractDataWrapper);
 
     static readonly grpc::Method<global::Tron.Net.Protocol.TriggerSmartContract, global::Tron.Net.Protocol.TransactionExtention> __Method_TriggerContract = new grpc::Method<global::Tron.Net.Protocol.TriggerSmartContract, global::Tron.Net.Protocol.TransactionExtention>(
         grpc::MethodType.Unary,
@@ -988,6 +1071,34 @@ namespace Tron.Net.Protocol {
         __Marshaller_protocol_NumberMessage,
         __Marshaller_protocol_TransactionInfoList);
 
+    static readonly grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NumberMessage> __Method_GetBurnTrx = new grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NumberMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetBurnTrx",
+        __Marshaller_protocol_EmptyMessage,
+        __Marshaller_protocol_NumberMessage);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.Transaction> __Method_GetTransactionFromPending = new grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.Transaction>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetTransactionFromPending",
+        __Marshaller_protocol_BytesMessage,
+        __Marshaller_protocol_Transaction);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.TransactionIdList> __Method_GetTransactionListFromPending = new grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.TransactionIdList>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetTransactionListFromPending",
+        __Marshaller_protocol_EmptyMessage,
+        __Marshaller_protocol_TransactionIdList);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NumberMessage> __Method_GetPendingSize = new grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NumberMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetPendingSize",
+        __Marshaller_protocol_EmptyMessage,
+        __Marshaller_protocol_NumberMessage);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -1004,6 +1115,16 @@ namespace Tron.Net.Protocol {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.Account> GetAccountById(global::Tron.Net.Protocol.Account request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.AccountBalanceResponse> GetAccountBalance(global::Tron.Net.Protocol.AccountBalanceRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.BlockBalanceTrace> GetBlockBalanceTrace(global::Tron.Net.Protocol.BlockBalanceTrace.Types.BlockIdentifier request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -1398,6 +1519,41 @@ namespace Tron.Net.Protocol {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionExtention> MarketSellAsset(global::Tron.Net.Protocol.MarketSellAssetContract request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionExtention> MarketCancelOrder(global::Tron.Net.Protocol.MarketCancelOrderContract request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.MarketOrder> GetMarketOrderById(global::Tron.Net.Protocol.BytesMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.MarketOrderList> GetMarketOrderByAccount(global::Tron.Net.Protocol.BytesMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.MarketPriceList> GetMarketPriceByPair(global::Tron.Net.Protocol.MarketOrderPair request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.MarketOrderList> GetMarketOrderListByPair(global::Tron.Net.Protocol.MarketOrderPair request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.MarketOrderPairList> GetMarketPairList(global::Tron.Net.Protocol.EmptyMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
       public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.NodeList> ListNodes(global::Tron.Net.Protocol.EmptyMessage request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -1542,6 +1698,11 @@ namespace Tron.Net.Protocol {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.SmartContract> GetContract(global::Tron.Net.Protocol.BytesMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.SmartContractDataWrapper> GetContractInfo(global::Tron.Net.Protocol.BytesMessage request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -1913,6 +2074,26 @@ namespace Tron.Net.Protocol {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.NumberMessage> GetBurnTrx(global::Tron.Net.Protocol.EmptyMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.Transaction> GetTransactionFromPending(global::Tron.Net.Protocol.BytesMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionIdList> GetTransactionListFromPending(global::Tron.Net.Protocol.EmptyMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.NumberMessage> GetPendingSize(global::Tron.Net.Protocol.EmptyMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Client for Wallet</summary>
@@ -1969,6 +2150,38 @@ namespace Tron.Net.Protocol {
       public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.Account> GetAccountByIdAsync(global::Tron.Net.Protocol.Account request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAccountById, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.AccountBalanceResponse GetAccountBalance(global::Tron.Net.Protocol.AccountBalanceRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetAccountBalance(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.AccountBalanceResponse GetAccountBalance(global::Tron.Net.Protocol.AccountBalanceRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetAccountBalance, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.AccountBalanceResponse> GetAccountBalanceAsync(global::Tron.Net.Protocol.AccountBalanceRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetAccountBalanceAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.AccountBalanceResponse> GetAccountBalanceAsync(global::Tron.Net.Protocol.AccountBalanceRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetAccountBalance, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.BlockBalanceTrace GetBlockBalanceTrace(global::Tron.Net.Protocol.BlockBalanceTrace.Types.BlockIdentifier request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBlockBalanceTrace(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.BlockBalanceTrace GetBlockBalanceTrace(global::Tron.Net.Protocol.BlockBalanceTrace.Types.BlockIdentifier request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetBlockBalanceTrace, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.BlockBalanceTrace> GetBlockBalanceTraceAsync(global::Tron.Net.Protocol.BlockBalanceTrace.Types.BlockIdentifier request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBlockBalanceTraceAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.BlockBalanceTrace> GetBlockBalanceTraceAsync(global::Tron.Net.Protocol.BlockBalanceTrace.Types.BlockIdentifier request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetBlockBalanceTrace, null, options, request);
       }
       /// <summary>
       ///Please use CreateTransaction2 instead of this function.
@@ -3482,6 +3695,118 @@ namespace Tron.Net.Protocol {
       {
         return CallInvoker.AsyncUnaryCall(__Method_ExchangeTransaction, null, options, request);
       }
+      public virtual global::Tron.Net.Protocol.TransactionExtention MarketSellAsset(global::Tron.Net.Protocol.MarketSellAssetContract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return MarketSellAsset(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.TransactionExtention MarketSellAsset(global::Tron.Net.Protocol.MarketSellAssetContract request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_MarketSellAsset, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> MarketSellAssetAsync(global::Tron.Net.Protocol.MarketSellAssetContract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return MarketSellAssetAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> MarketSellAssetAsync(global::Tron.Net.Protocol.MarketSellAssetContract request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_MarketSellAsset, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.TransactionExtention MarketCancelOrder(global::Tron.Net.Protocol.MarketCancelOrderContract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return MarketCancelOrder(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.TransactionExtention MarketCancelOrder(global::Tron.Net.Protocol.MarketCancelOrderContract request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_MarketCancelOrder, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> MarketCancelOrderAsync(global::Tron.Net.Protocol.MarketCancelOrderContract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return MarketCancelOrderAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> MarketCancelOrderAsync(global::Tron.Net.Protocol.MarketCancelOrderContract request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_MarketCancelOrder, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.MarketOrder GetMarketOrderById(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketOrderById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.MarketOrder GetMarketOrderById(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetMarketOrderById, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketOrder> GetMarketOrderByIdAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketOrderByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketOrder> GetMarketOrderByIdAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetMarketOrderById, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.MarketOrderList GetMarketOrderByAccount(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketOrderByAccount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.MarketOrderList GetMarketOrderByAccount(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetMarketOrderByAccount, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketOrderList> GetMarketOrderByAccountAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketOrderByAccountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketOrderList> GetMarketOrderByAccountAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetMarketOrderByAccount, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.MarketPriceList GetMarketPriceByPair(global::Tron.Net.Protocol.MarketOrderPair request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketPriceByPair(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.MarketPriceList GetMarketPriceByPair(global::Tron.Net.Protocol.MarketOrderPair request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetMarketPriceByPair, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketPriceList> GetMarketPriceByPairAsync(global::Tron.Net.Protocol.MarketOrderPair request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketPriceByPairAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketPriceList> GetMarketPriceByPairAsync(global::Tron.Net.Protocol.MarketOrderPair request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetMarketPriceByPair, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.MarketOrderList GetMarketOrderListByPair(global::Tron.Net.Protocol.MarketOrderPair request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketOrderListByPair(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.MarketOrderList GetMarketOrderListByPair(global::Tron.Net.Protocol.MarketOrderPair request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetMarketOrderListByPair, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketOrderList> GetMarketOrderListByPairAsync(global::Tron.Net.Protocol.MarketOrderPair request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketOrderListByPairAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketOrderList> GetMarketOrderListByPairAsync(global::Tron.Net.Protocol.MarketOrderPair request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetMarketOrderListByPair, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.MarketOrderPairList GetMarketPairList(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketPairList(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.MarketOrderPairList GetMarketPairList(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetMarketPairList, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketOrderPairList> GetMarketPairListAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketPairListAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketOrderPairList> GetMarketPairListAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetMarketPairList, null, options, request);
+      }
       public virtual global::Tron.Net.Protocol.NodeList ListNodes(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return ListNodes(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -4025,6 +4350,22 @@ namespace Tron.Net.Protocol {
       public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.SmartContract> GetContractAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetContract, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.SmartContractDataWrapper GetContractInfo(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetContractInfo(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.SmartContractDataWrapper GetContractInfo(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetContractInfo, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.SmartContractDataWrapper> GetContractInfoAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetContractInfoAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.SmartContractDataWrapper> GetContractInfoAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetContractInfo, null, options, request);
       }
       public virtual global::Tron.Net.Protocol.TransactionExtention TriggerContract(global::Tron.Net.Protocol.TriggerSmartContract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
@@ -5290,6 +5631,70 @@ namespace Tron.Net.Protocol {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetTransactionInfoByBlockNum, null, options, request);
       }
+      public virtual global::Tron.Net.Protocol.NumberMessage GetBurnTrx(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBurnTrx(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.NumberMessage GetBurnTrx(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetBurnTrx, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.NumberMessage> GetBurnTrxAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBurnTrxAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.NumberMessage> GetBurnTrxAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetBurnTrx, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.Transaction GetTransactionFromPending(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetTransactionFromPending(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.Transaction GetTransactionFromPending(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetTransactionFromPending, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.Transaction> GetTransactionFromPendingAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetTransactionFromPendingAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.Transaction> GetTransactionFromPendingAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetTransactionFromPending, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.TransactionIdList GetTransactionListFromPending(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetTransactionListFromPending(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.TransactionIdList GetTransactionListFromPending(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetTransactionListFromPending, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionIdList> GetTransactionListFromPendingAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetTransactionListFromPendingAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionIdList> GetTransactionListFromPendingAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetTransactionListFromPending, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.NumberMessage GetPendingSize(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetPendingSize(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.NumberMessage GetPendingSize(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetPendingSize, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.NumberMessage> GetPendingSizeAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetPendingSizeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.NumberMessage> GetPendingSizeAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetPendingSize, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override WalletClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -5304,6 +5709,8 @@ namespace Tron.Net.Protocol {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetAccount, serviceImpl.GetAccount)
           .AddMethod(__Method_GetAccountById, serviceImpl.GetAccountById)
+          .AddMethod(__Method_GetAccountBalance, serviceImpl.GetAccountBalance)
+          .AddMethod(__Method_GetBlockBalanceTrace, serviceImpl.GetBlockBalanceTrace)
           .AddMethod(__Method_CreateTransaction, serviceImpl.CreateTransaction)
           .AddMethod(__Method_CreateTransaction2, serviceImpl.CreateTransaction2)
           .AddMethod(__Method_BroadcastTransaction, serviceImpl.BroadcastTransaction)
@@ -5346,6 +5753,13 @@ namespace Tron.Net.Protocol {
           .AddMethod(__Method_ExchangeInject, serviceImpl.ExchangeInject)
           .AddMethod(__Method_ExchangeWithdraw, serviceImpl.ExchangeWithdraw)
           .AddMethod(__Method_ExchangeTransaction, serviceImpl.ExchangeTransaction)
+          .AddMethod(__Method_MarketSellAsset, serviceImpl.MarketSellAsset)
+          .AddMethod(__Method_MarketCancelOrder, serviceImpl.MarketCancelOrder)
+          .AddMethod(__Method_GetMarketOrderById, serviceImpl.GetMarketOrderById)
+          .AddMethod(__Method_GetMarketOrderByAccount, serviceImpl.GetMarketOrderByAccount)
+          .AddMethod(__Method_GetMarketPriceByPair, serviceImpl.GetMarketPriceByPair)
+          .AddMethod(__Method_GetMarketOrderListByPair, serviceImpl.GetMarketOrderListByPair)
+          .AddMethod(__Method_GetMarketPairList, serviceImpl.GetMarketPairList)
           .AddMethod(__Method_ListNodes, serviceImpl.ListNodes)
           .AddMethod(__Method_GetAssetIssueByAccount, serviceImpl.GetAssetIssueByAccount)
           .AddMethod(__Method_GetAccountNet, serviceImpl.GetAccountNet)
@@ -5366,6 +5780,7 @@ namespace Tron.Net.Protocol {
           .AddMethod(__Method_GetTransactionById, serviceImpl.GetTransactionById)
           .AddMethod(__Method_DeployContract, serviceImpl.DeployContract)
           .AddMethod(__Method_GetContract, serviceImpl.GetContract)
+          .AddMethod(__Method_GetContractInfo, serviceImpl.GetContractInfo)
           .AddMethod(__Method_TriggerContract, serviceImpl.TriggerContract)
           .AddMethod(__Method_TriggerConstantContract, serviceImpl.TriggerConstantContract)
           .AddMethod(__Method_ClearContractABI, serviceImpl.ClearContractABI)
@@ -5426,7 +5841,11 @@ namespace Tron.Net.Protocol {
           .AddMethod(__Method_IsShieldedTRC20ContractNoteSpent, serviceImpl.IsShieldedTRC20ContractNoteSpent)
           .AddMethod(__Method_GetTriggerInputForShieldedTRC20Contract, serviceImpl.GetTriggerInputForShieldedTRC20Contract)
           .AddMethod(__Method_CreateCommonTransaction, serviceImpl.CreateCommonTransaction)
-          .AddMethod(__Method_GetTransactionInfoByBlockNum, serviceImpl.GetTransactionInfoByBlockNum).Build();
+          .AddMethod(__Method_GetTransactionInfoByBlockNum, serviceImpl.GetTransactionInfoByBlockNum)
+          .AddMethod(__Method_GetBurnTrx, serviceImpl.GetBurnTrx)
+          .AddMethod(__Method_GetTransactionFromPending, serviceImpl.GetTransactionFromPending)
+          .AddMethod(__Method_GetTransactionListFromPending, serviceImpl.GetTransactionListFromPending)
+          .AddMethod(__Method_GetPendingSize, serviceImpl.GetPendingSize).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -5437,6 +5856,8 @@ namespace Tron.Net.Protocol {
     {
       serviceBinder.AddMethod(__Method_GetAccount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.Account, global::Tron.Net.Protocol.Account>(serviceImpl.GetAccount));
       serviceBinder.AddMethod(__Method_GetAccountById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.Account, global::Tron.Net.Protocol.Account>(serviceImpl.GetAccountById));
+      serviceBinder.AddMethod(__Method_GetAccountBalance, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.AccountBalanceRequest, global::Tron.Net.Protocol.AccountBalanceResponse>(serviceImpl.GetAccountBalance));
+      serviceBinder.AddMethod(__Method_GetBlockBalanceTrace, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BlockBalanceTrace.Types.BlockIdentifier, global::Tron.Net.Protocol.BlockBalanceTrace>(serviceImpl.GetBlockBalanceTrace));
       serviceBinder.AddMethod(__Method_CreateTransaction, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.TransferContract, global::Tron.Net.Protocol.Transaction>(serviceImpl.CreateTransaction));
       serviceBinder.AddMethod(__Method_CreateTransaction2, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.TransferContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.CreateTransaction2));
       serviceBinder.AddMethod(__Method_BroadcastTransaction, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.Transaction, global::Tron.Net.Protocol.Return>(serviceImpl.BroadcastTransaction));
@@ -5479,6 +5900,13 @@ namespace Tron.Net.Protocol {
       serviceBinder.AddMethod(__Method_ExchangeInject, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.ExchangeInjectContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.ExchangeInject));
       serviceBinder.AddMethod(__Method_ExchangeWithdraw, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.ExchangeWithdrawContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.ExchangeWithdraw));
       serviceBinder.AddMethod(__Method_ExchangeTransaction, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.ExchangeTransactionContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.ExchangeTransaction));
+      serviceBinder.AddMethod(__Method_MarketSellAsset, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.MarketSellAssetContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.MarketSellAsset));
+      serviceBinder.AddMethod(__Method_MarketCancelOrder, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.MarketCancelOrderContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.MarketCancelOrder));
+      serviceBinder.AddMethod(__Method_GetMarketOrderById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.MarketOrder>(serviceImpl.GetMarketOrderById));
+      serviceBinder.AddMethod(__Method_GetMarketOrderByAccount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.MarketOrderList>(serviceImpl.GetMarketOrderByAccount));
+      serviceBinder.AddMethod(__Method_GetMarketPriceByPair, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.MarketOrderPair, global::Tron.Net.Protocol.MarketPriceList>(serviceImpl.GetMarketPriceByPair));
+      serviceBinder.AddMethod(__Method_GetMarketOrderListByPair, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.MarketOrderPair, global::Tron.Net.Protocol.MarketOrderList>(serviceImpl.GetMarketOrderListByPair));
+      serviceBinder.AddMethod(__Method_GetMarketPairList, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.MarketOrderPairList>(serviceImpl.GetMarketPairList));
       serviceBinder.AddMethod(__Method_ListNodes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NodeList>(serviceImpl.ListNodes));
       serviceBinder.AddMethod(__Method_GetAssetIssueByAccount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.Account, global::Tron.Net.Protocol.AssetIssueList>(serviceImpl.GetAssetIssueByAccount));
       serviceBinder.AddMethod(__Method_GetAccountNet, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.Account, global::Tron.Net.Protocol.AccountNetMessage>(serviceImpl.GetAccountNet));
@@ -5499,6 +5927,7 @@ namespace Tron.Net.Protocol {
       serviceBinder.AddMethod(__Method_GetTransactionById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.Transaction>(serviceImpl.GetTransactionById));
       serviceBinder.AddMethod(__Method_DeployContract, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.CreateSmartContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.DeployContract));
       serviceBinder.AddMethod(__Method_GetContract, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.SmartContract>(serviceImpl.GetContract));
+      serviceBinder.AddMethod(__Method_GetContractInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.SmartContractDataWrapper>(serviceImpl.GetContractInfo));
       serviceBinder.AddMethod(__Method_TriggerContract, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.TriggerSmartContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.TriggerContract));
       serviceBinder.AddMethod(__Method_TriggerConstantContract, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.TriggerSmartContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.TriggerConstantContract));
       serviceBinder.AddMethod(__Method_ClearContractABI, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.ClearABIContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.ClearContractABI));
@@ -5560,6 +5989,10 @@ namespace Tron.Net.Protocol {
       serviceBinder.AddMethod(__Method_GetTriggerInputForShieldedTRC20Contract, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.ShieldedTRC20TriggerContractParameters, global::Tron.Net.Protocol.BytesMessage>(serviceImpl.GetTriggerInputForShieldedTRC20Contract));
       serviceBinder.AddMethod(__Method_CreateCommonTransaction, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.Transaction, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.CreateCommonTransaction));
       serviceBinder.AddMethod(__Method_GetTransactionInfoByBlockNum, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.NumberMessage, global::Tron.Net.Protocol.TransactionInfoList>(serviceImpl.GetTransactionInfoByBlockNum));
+      serviceBinder.AddMethod(__Method_GetBurnTrx, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NumberMessage>(serviceImpl.GetBurnTrx));
+      serviceBinder.AddMethod(__Method_GetTransactionFromPending, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.Transaction>(serviceImpl.GetTransactionFromPending));
+      serviceBinder.AddMethod(__Method_GetTransactionListFromPending, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.TransactionIdList>(serviceImpl.GetTransactionListFromPending));
+      serviceBinder.AddMethod(__Method_GetPendingSize, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NumberMessage>(serviceImpl.GetPendingSize));
     }
 
   }
@@ -5602,6 +6035,11 @@ namespace Tron.Net.Protocol {
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.TriggerSmartContract> __Marshaller_protocol_TriggerSmartContract = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.TriggerSmartContract.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.TransactionExtention> __Marshaller_protocol_TransactionExtention = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.TransactionExtention.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.TransactionInfoList> __Marshaller_protocol_TransactionInfoList = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.TransactionInfoList.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.MarketOrder> __Marshaller_protocol_MarketOrder = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.MarketOrder.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.MarketOrderList> __Marshaller_protocol_MarketOrderList = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.MarketOrderList.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.MarketOrderPair> __Marshaller_protocol_MarketOrderPair = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.MarketOrderPair.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.MarketPriceList> __Marshaller_protocol_MarketPriceList = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.MarketPriceList.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.MarketOrderPairList> __Marshaller_protocol_MarketOrderPairList = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.MarketOrderPairList.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Tron.Net.Protocol.Account, global::Tron.Net.Protocol.Account> __Method_GetAccount = new grpc::Method<global::Tron.Net.Protocol.Account, global::Tron.Net.Protocol.Account>(
         grpc::MethodType.Unary,
@@ -5827,6 +6265,48 @@ namespace Tron.Net.Protocol {
         __Marshaller_protocol_NumberMessage,
         __Marshaller_protocol_TransactionInfoList);
 
+    static readonly grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.MarketOrder> __Method_GetMarketOrderById = new grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.MarketOrder>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetMarketOrderById",
+        __Marshaller_protocol_BytesMessage,
+        __Marshaller_protocol_MarketOrder);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.MarketOrderList> __Method_GetMarketOrderByAccount = new grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.MarketOrderList>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetMarketOrderByAccount",
+        __Marshaller_protocol_BytesMessage,
+        __Marshaller_protocol_MarketOrderList);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.MarketOrderPair, global::Tron.Net.Protocol.MarketPriceList> __Method_GetMarketPriceByPair = new grpc::Method<global::Tron.Net.Protocol.MarketOrderPair, global::Tron.Net.Protocol.MarketPriceList>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetMarketPriceByPair",
+        __Marshaller_protocol_MarketOrderPair,
+        __Marshaller_protocol_MarketPriceList);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.MarketOrderPair, global::Tron.Net.Protocol.MarketOrderList> __Method_GetMarketOrderListByPair = new grpc::Method<global::Tron.Net.Protocol.MarketOrderPair, global::Tron.Net.Protocol.MarketOrderList>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetMarketOrderListByPair",
+        __Marshaller_protocol_MarketOrderPair,
+        __Marshaller_protocol_MarketOrderList);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.MarketOrderPairList> __Method_GetMarketPairList = new grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.MarketOrderPairList>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetMarketPairList",
+        __Marshaller_protocol_EmptyMessage,
+        __Marshaller_protocol_MarketOrderPairList);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NumberMessage> __Method_GetBurnTrx = new grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NumberMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetBurnTrx",
+        __Marshaller_protocol_EmptyMessage,
+        __Marshaller_protocol_NumberMessage);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -6023,6 +6503,36 @@ namespace Tron.Net.Protocol {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionInfoList> GetTransactionInfoByBlockNum(global::Tron.Net.Protocol.NumberMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.MarketOrder> GetMarketOrderById(global::Tron.Net.Protocol.BytesMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.MarketOrderList> GetMarketOrderByAccount(global::Tron.Net.Protocol.BytesMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.MarketPriceList> GetMarketPriceByPair(global::Tron.Net.Protocol.MarketOrderPair request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.MarketOrderList> GetMarketOrderListByPair(global::Tron.Net.Protocol.MarketOrderPair request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.MarketOrderPairList> GetMarketPairList(global::Tron.Net.Protocol.EmptyMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.NumberMessage> GetBurnTrx(global::Tron.Net.Protocol.EmptyMessage request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -6704,6 +7214,102 @@ namespace Tron.Net.Protocol {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetTransactionInfoByBlockNum, null, options, request);
       }
+      public virtual global::Tron.Net.Protocol.MarketOrder GetMarketOrderById(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketOrderById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.MarketOrder GetMarketOrderById(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetMarketOrderById, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketOrder> GetMarketOrderByIdAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketOrderByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketOrder> GetMarketOrderByIdAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetMarketOrderById, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.MarketOrderList GetMarketOrderByAccount(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketOrderByAccount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.MarketOrderList GetMarketOrderByAccount(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetMarketOrderByAccount, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketOrderList> GetMarketOrderByAccountAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketOrderByAccountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketOrderList> GetMarketOrderByAccountAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetMarketOrderByAccount, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.MarketPriceList GetMarketPriceByPair(global::Tron.Net.Protocol.MarketOrderPair request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketPriceByPair(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.MarketPriceList GetMarketPriceByPair(global::Tron.Net.Protocol.MarketOrderPair request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetMarketPriceByPair, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketPriceList> GetMarketPriceByPairAsync(global::Tron.Net.Protocol.MarketOrderPair request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketPriceByPairAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketPriceList> GetMarketPriceByPairAsync(global::Tron.Net.Protocol.MarketOrderPair request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetMarketPriceByPair, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.MarketOrderList GetMarketOrderListByPair(global::Tron.Net.Protocol.MarketOrderPair request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketOrderListByPair(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.MarketOrderList GetMarketOrderListByPair(global::Tron.Net.Protocol.MarketOrderPair request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetMarketOrderListByPair, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketOrderList> GetMarketOrderListByPairAsync(global::Tron.Net.Protocol.MarketOrderPair request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketOrderListByPairAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketOrderList> GetMarketOrderListByPairAsync(global::Tron.Net.Protocol.MarketOrderPair request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetMarketOrderListByPair, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.MarketOrderPairList GetMarketPairList(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketPairList(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.MarketOrderPairList GetMarketPairList(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetMarketPairList, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketOrderPairList> GetMarketPairListAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMarketPairListAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MarketOrderPairList> GetMarketPairListAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetMarketPairList, null, options, request);
+      }
+      public virtual global::Tron.Net.Protocol.NumberMessage GetBurnTrx(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBurnTrx(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.NumberMessage GetBurnTrx(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetBurnTrx, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.NumberMessage> GetBurnTrxAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBurnTrxAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.NumberMessage> GetBurnTrxAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetBurnTrx, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override WalletSolidityClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -6747,7 +7353,13 @@ namespace Tron.Net.Protocol {
           .AddMethod(__Method_GetRewardInfo, serviceImpl.GetRewardInfo)
           .AddMethod(__Method_GetBrokerageInfo, serviceImpl.GetBrokerageInfo)
           .AddMethod(__Method_TriggerConstantContract, serviceImpl.TriggerConstantContract)
-          .AddMethod(__Method_GetTransactionInfoByBlockNum, serviceImpl.GetTransactionInfoByBlockNum).Build();
+          .AddMethod(__Method_GetTransactionInfoByBlockNum, serviceImpl.GetTransactionInfoByBlockNum)
+          .AddMethod(__Method_GetMarketOrderById, serviceImpl.GetMarketOrderById)
+          .AddMethod(__Method_GetMarketOrderByAccount, serviceImpl.GetMarketOrderByAccount)
+          .AddMethod(__Method_GetMarketPriceByPair, serviceImpl.GetMarketPriceByPair)
+          .AddMethod(__Method_GetMarketOrderListByPair, serviceImpl.GetMarketOrderListByPair)
+          .AddMethod(__Method_GetMarketPairList, serviceImpl.GetMarketPairList)
+          .AddMethod(__Method_GetBurnTrx, serviceImpl.GetBurnTrx).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -6788,6 +7400,12 @@ namespace Tron.Net.Protocol {
       serviceBinder.AddMethod(__Method_GetBrokerageInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.NumberMessage>(serviceImpl.GetBrokerageInfo));
       serviceBinder.AddMethod(__Method_TriggerConstantContract, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.TriggerSmartContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.TriggerConstantContract));
       serviceBinder.AddMethod(__Method_GetTransactionInfoByBlockNum, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.NumberMessage, global::Tron.Net.Protocol.TransactionInfoList>(serviceImpl.GetTransactionInfoByBlockNum));
+      serviceBinder.AddMethod(__Method_GetMarketOrderById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.MarketOrder>(serviceImpl.GetMarketOrderById));
+      serviceBinder.AddMethod(__Method_GetMarketOrderByAccount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.MarketOrderList>(serviceImpl.GetMarketOrderByAccount));
+      serviceBinder.AddMethod(__Method_GetMarketPriceByPair, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.MarketOrderPair, global::Tron.Net.Protocol.MarketPriceList>(serviceImpl.GetMarketPriceByPair));
+      serviceBinder.AddMethod(__Method_GetMarketOrderListByPair, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.MarketOrderPair, global::Tron.Net.Protocol.MarketOrderList>(serviceImpl.GetMarketOrderListByPair));
+      serviceBinder.AddMethod(__Method_GetMarketPairList, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.MarketOrderPairList>(serviceImpl.GetMarketPairList));
+      serviceBinder.AddMethod(__Method_GetBurnTrx, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NumberMessage>(serviceImpl.GetBurnTrx));
     }
 
   }
@@ -7338,6 +7956,101 @@ namespace Tron.Net.Protocol {
     }
 
   }
+  public static partial class Monitor
+  {
+    static readonly string __ServiceName = "protocol.Monitor";
+
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.EmptyMessage> __Marshaller_protocol_EmptyMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.EmptyMessage.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.MetricsInfo> __Marshaller_protocol_MetricsInfo = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Tron.Net.Protocol.MetricsInfo.Parser.ParseFrom);
+
+    static readonly grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.MetricsInfo> __Method_GetStatsInfo = new grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.MetricsInfo>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetStatsInfo",
+        __Marshaller_protocol_EmptyMessage,
+        __Marshaller_protocol_MetricsInfo);
+
+    /// <summary>Service descriptor</summary>
+    public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
+    {
+      get { return global::Tron.Net.Protocol.ApiReflection.Descriptor.Services[4]; }
+    }
+
+    /// <summary>Base class for server-side implementations of Monitor</summary>
+    [grpc::BindServiceMethod(typeof(Monitor), "BindService")]
+    public abstract partial class MonitorBase
+    {
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.MetricsInfo> GetStatsInfo(global::Tron.Net.Protocol.EmptyMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+    }
+
+    /// <summary>Client for Monitor</summary>
+    public partial class MonitorClient : grpc::ClientBase<MonitorClient>
+    {
+      /// <summary>Creates a new client for Monitor</summary>
+      /// <param name="channel">The channel to use to make remote calls.</param>
+      public MonitorClient(grpc::ChannelBase channel) : base(channel)
+      {
+      }
+      /// <summary>Creates a new client for Monitor that uses a custom <c>CallInvoker</c>.</summary>
+      /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+      public MonitorClient(grpc::CallInvoker callInvoker) : base(callInvoker)
+      {
+      }
+      /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+      protected MonitorClient() : base()
+      {
+      }
+      /// <summary>Protected constructor to allow creation of configured clients.</summary>
+      /// <param name="configuration">The client configuration.</param>
+      protected MonitorClient(ClientBaseConfiguration configuration) : base(configuration)
+      {
+      }
+
+      public virtual global::Tron.Net.Protocol.MetricsInfo GetStatsInfo(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetStatsInfo(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::Tron.Net.Protocol.MetricsInfo GetStatsInfo(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetStatsInfo, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MetricsInfo> GetStatsInfoAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetStatsInfoAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.MetricsInfo> GetStatsInfoAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetStatsInfo, null, options, request);
+      }
+      /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+      protected override MonitorClient NewInstance(ClientBaseConfiguration configuration)
+      {
+        return new MonitorClient(configuration);
+      }
+    }
+
+    /// <summary>Creates service definition that can be registered with a server</summary>
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    public static grpc::ServerServiceDefinition BindService(MonitorBase serviceImpl)
+    {
+      return grpc::ServerServiceDefinition.CreateBuilder()
+          .AddMethod(__Method_GetStatsInfo, serviceImpl.GetStatsInfo).Build();
+    }
+
+    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+    /// Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+    /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    public static void BindService(grpc::ServiceBinderBase serviceBinder, MonitorBase serviceImpl)
+    {
+      serviceBinder.AddMethod(__Method_GetStatsInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.MetricsInfo>(serviceImpl.GetStatsInfo));
+    }
+
+  }
   /// <summary>
   /// the api of tron's network such as node list.
   /// </summary>
@@ -7349,7 +8062,7 @@ namespace Tron.Net.Protocol {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Tron.Net.Protocol.ApiReflection.Descriptor.Services[4]; }
+      get { return global::Tron.Net.Protocol.ApiReflection.Descriptor.Services[5]; }
     }
 
     /// <summary>Base class for server-side implementations of Network</summary>
