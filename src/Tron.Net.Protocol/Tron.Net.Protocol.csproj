@@ -2,15 +2,15 @@
 
 <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
-    <Version>4.3.0</Version>
+    <Version>4.5.2</Version>
     <Authors>https://github.com/yunfandev</Authors>
     <Company>https://github.com/yunfandev</Company>
-    <Product>Tron.Net.Protocol</Product>
+    <PackageId>Tron.Protocol</PackageId>
     <Copyright>https://github.com/yunfandev</Copyright>
-    <Description>Tron.Net.Protocol is a port in .NET standard of the Tron protocol</Description>
+    <Description>Tron.Protocol is a port in .NET standard of the Tron protocol</Description>
     <LicenseUrl>https://raw.githubusercontent.com/yunfandev/tron.net.protocol/master/README.md</LicenseUrl>
     <PackageProjectUrl>https://github.com/yunfandev/tron.net.protocol</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/yunfandev/tron.net.protocol</RepositoryUrl>   
+    <RepositoryUrl>https://github.com/yunfandev/tron.net.protocol</RepositoryUrl>
   </PropertyGroup>
   
   <ItemGroup>
@@ -19,18 +19,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Google.Api.CommonProtos" Version="2.3.0" />
-    <PackageReference Include="Google.Protobuf" Version="3.17.3" />
-    <PackageReference Include="Google.Protobuf.Tools" Version="3.17.2" />
-    <PackageReference Include="Grpc.Core.Api" Version="2.39.1" />
-    <PackageReference Include="Grpc.Tools" Version="2.39.1">
+    <PackageReference Include="Google.Api.CommonProtos" Version="2.6.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.21.5" />
+    <PackageReference Include="Google.Protobuf.Tools" Version="3.21.5" />
+    <PackageReference Include="Grpc.Core.Api" Version="2.48.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.48.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="$(ProjectDir)PreBuild\generate-classes-from-protofiles.cmd &quot;$(SolutionDir)&quot; &quot;$(ProjectDir)&quot; &quot;$(NuGetPackageRoot)&quot; 3.11.2 2.26.0 &quot;$(SolutionDir)requirements\protos&quot;" />
+    <Exec Command="$(ProjectDir)PreBuild\generate-classes-from-protofiles.cmd &quot;$(SolutionDir)&quot; &quot;$(ProjectDir)&quot; &quot;$(NuGetPackageRoot)&quot; 3.21.5 2.48.0 &quot;$(SolutionDir)requirements\protos&quot;" />
   </Target>
 
 </Project>

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>Tron.Protocol</id>
-    <version>4.3.0</version>
+    <version>4.5.2</version>
     <authors>https://github.com/yunfandev</authors>
     <owners>https://github.com/yunfandev</owners>
     <tags>Tron</tags>
@@ -11,12 +11,11 @@
     <projectUrl>https://github.com/yunfandev/tron.net.protocol</projectUrl>
     <icon>tron-logo.jpg</icon>
     <description>Tron Protocol GRPC calls</description>
-    <copyright>griffo.io</copyright>
     <repository url="https://github.com/yunfandev/tron.net.protocol" />
-    <releaseNotes>GreatVoyage-v4.3.0(Bacon)</releaseNotes>
+    <releaseNotes>GreatVoyage-v4.5.2(Aurelius)</releaseNotes>
     <dependencies>
         <group targetFramework=".NETStandard2.0">
-            <dependency id="Google.Protobuf" version="3.17.3" exclude="Build,Analyzers" />
+            <dependency id="Google.Protobuf" version="3.21.5" exclude="Build,Analyzers" />
         </group>
     </dependencies>
   </metadata>
