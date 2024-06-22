@@ -25,55 +25,59 @@ namespace Tron.Net.Protocol {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci90cm9ucHJvdG9jb2wvY29yZS9jb250cmFjdC9zbWFydF9jb250cmFjdC5w",
-            "cm90bxIIcHJvdG9jb2waD2NvcmUvVHJvbi5wcm90byKbBwoNU21hcnRDb250",
+            "cm90bxIIcHJvdG9jb2waD2NvcmUvVHJvbi5wcm90byKsBwoNU21hcnRDb250",
             "cmFjdBIWCg5vcmlnaW5fYWRkcmVzcxgBIAEoDBIYChBjb250cmFjdF9hZGRy",
             "ZXNzGAIgASgMEigKA2FiaRgDIAEoCzIbLnByb3RvY29sLlNtYXJ0Q29udHJh",
             "Y3QuQUJJEhAKCGJ5dGVjb2RlGAQgASgMEhIKCmNhbGxfdmFsdWUYBSABKAMS",
             "JQodY29uc3VtZV91c2VyX3Jlc291cmNlX3BlcmNlbnQYBiABKAMSDAoEbmFt",
             "ZRgHIAEoCRIbChNvcmlnaW5fZW5lcmd5X2xpbWl0GAggASgDEhEKCWNvZGVf",
-            "aGFzaBgJIAEoDBIQCgh0cnhfaGFzaBgKIAEoDBqQBQoDQUJJEjEKBmVudHJ5",
-            "cxgBIAMoCzIhLnByb3RvY29sLlNtYXJ0Q29udHJhY3QuQUJJLkVudHJ5GtUE",
-            "CgVFbnRyeRIRCglhbm9ueW1vdXMYASABKAgSEAoIY29uc3RhbnQYAiABKAgS",
-            "DAoEbmFtZRgDIAEoCRI3CgZpbnB1dHMYBCADKAsyJy5wcm90b2NvbC5TbWFy",
-            "dENvbnRyYWN0LkFCSS5FbnRyeS5QYXJhbRI4CgdvdXRwdXRzGAUgAygLMicu",
-            "cHJvdG9jb2wuU21hcnRDb250cmFjdC5BQkkuRW50cnkuUGFyYW0SOQoEdHlw",
-            "ZRgGIAEoDjIrLnByb3RvY29sLlNtYXJ0Q29udHJhY3QuQUJJLkVudHJ5LkVu",
-            "dHJ5VHlwZRIPCgdwYXlhYmxlGAcgASgIEk4KD3N0YXRlTXV0YWJpbGl0eRgI",
-            "IAEoDjI1LnByb3RvY29sLlNtYXJ0Q29udHJhY3QuQUJJLkVudHJ5LlN0YXRl",
-            "TXV0YWJpbGl0eVR5cGUaNAoFUGFyYW0SDwoHaW5kZXhlZBgBIAEoCBIMCgRu",
-            "YW1lGAIgASgJEgwKBHR5cGUYAyABKAkicQoJRW50cnlUeXBlEhQKEFVua25v",
-            "d25FbnRyeVR5cGUQABIPCgtDb25zdHJ1Y3RvchABEgwKCEZ1bmN0aW9uEAIS",
-            "CQoFRXZlbnQQAxIMCghGYWxsYmFjaxAEEgsKB1JlY2VpdmUQBRIJCgVFcnJv",
-            "chAGImEKE1N0YXRlTXV0YWJpbGl0eVR5cGUSGQoVVW5rbm93bk11dGFiaWxp",
-            "dHlUeXBlEAASCAoEUHVyZRABEggKBFZpZXcQAhIOCgpOb25wYXlhYmxlEAMS",
-            "CwoHUGF5YWJsZRAEIocBChNDcmVhdGVTbWFydENvbnRyYWN0EhUKDW93bmVy",
-            "X2FkZHJlc3MYASABKAwSLQoMbmV3X2NvbnRyYWN0GAIgASgLMhcucHJvdG9j",
-            "b2wuU21hcnRDb250cmFjdBIYChBjYWxsX3Rva2VuX3ZhbHVlGAMgASgDEhAK",
-            "CHRva2VuX2lkGAQgASgDIpUBChRUcmlnZ2VyU21hcnRDb250cmFjdBIVCg1v",
-            "d25lcl9hZGRyZXNzGAEgASgMEhgKEGNvbnRyYWN0X2FkZHJlc3MYAiABKAwS",
-            "EgoKY2FsbF92YWx1ZRgDIAEoAxIMCgRkYXRhGAQgASgMEhgKEGNhbGxfdG9r",
-            "ZW5fdmFsdWUYBSABKAMSEAoIdG9rZW5faWQYBiABKAMiQwoQQ2xlYXJBQklD",
-            "b250cmFjdBIVCg1vd25lcl9hZGRyZXNzGAEgASgMEhgKEGNvbnRyYWN0X2Fk",
-            "ZHJlc3MYAiABKAwibwoVVXBkYXRlU2V0dGluZ0NvbnRyYWN0EhUKDW93bmVy",
-            "X2FkZHJlc3MYASABKAwSGAoQY29udHJhY3RfYWRkcmVzcxgCIAEoDBIlCh1j",
-            "b25zdW1lX3VzZXJfcmVzb3VyY2VfcGVyY2VudBgDIAEoAyJpChlVcGRhdGVF",
-            "bmVyZ3lMaW1pdENvbnRyYWN0EhUKDW93bmVyX2FkZHJlc3MYASABKAwSGAoQ",
-            "Y29udHJhY3RfYWRkcmVzcxgCIAEoDBIbChNvcmlnaW5fZW5lcmd5X2xpbWl0",
-            "GAMgASgDImAKGFNtYXJ0Q29udHJhY3REYXRhV3JhcHBlchIvCg5zbWFydF9j",
-            "b250cmFjdBgBIAEoCzIXLnByb3RvY29sLlNtYXJ0Q29udHJhY3QSEwoLcnVu",
-            "dGltZWNvZGUYAiABKAxCWQoYb3JnLnRyb24ucHJvdG9zLmNvbnRyYWN0Wiln",
-            "aXRodWIuY29tL3Ryb25wcm90b2NvbC9ncnBjLWdhdGV3YXkvY29yZaoCEVRy",
-            "b24uTmV0LlByb3RvY29sYgZwcm90bzM="));
+            "aGFzaBgJIAEoDBIQCgh0cnhfaGFzaBgKIAEoDBIPCgd2ZXJzaW9uGAsgASgF",
+            "GpAFCgNBQkkSMQoGZW50cnlzGAEgAygLMiEucHJvdG9jb2wuU21hcnRDb250",
+            "cmFjdC5BQkkuRW50cnka1QQKBUVudHJ5EhEKCWFub255bW91cxgBIAEoCBIQ",
+            "Cghjb25zdGFudBgCIAEoCBIMCgRuYW1lGAMgASgJEjcKBmlucHV0cxgEIAMo",
+            "CzInLnByb3RvY29sLlNtYXJ0Q29udHJhY3QuQUJJLkVudHJ5LlBhcmFtEjgK",
+            "B291dHB1dHMYBSADKAsyJy5wcm90b2NvbC5TbWFydENvbnRyYWN0LkFCSS5F",
+            "bnRyeS5QYXJhbRI5CgR0eXBlGAYgASgOMisucHJvdG9jb2wuU21hcnRDb250",
+            "cmFjdC5BQkkuRW50cnkuRW50cnlUeXBlEg8KB3BheWFibGUYByABKAgSTgoP",
+            "c3RhdGVNdXRhYmlsaXR5GAggASgOMjUucHJvdG9jb2wuU21hcnRDb250cmFj",
+            "dC5BQkkuRW50cnkuU3RhdGVNdXRhYmlsaXR5VHlwZRo0CgVQYXJhbRIPCgdp",
+            "bmRleGVkGAEgASgIEgwKBG5hbWUYAiABKAkSDAoEdHlwZRgDIAEoCSJxCglF",
+            "bnRyeVR5cGUSFAoQVW5rbm93bkVudHJ5VHlwZRAAEg8KC0NvbnN0cnVjdG9y",
+            "EAESDAoIRnVuY3Rpb24QAhIJCgVFdmVudBADEgwKCEZhbGxiYWNrEAQSCwoH",
+            "UmVjZWl2ZRAFEgkKBUVycm9yEAYiYQoTU3RhdGVNdXRhYmlsaXR5VHlwZRIZ",
+            "ChVVbmtub3duTXV0YWJpbGl0eVR5cGUQABIICgRQdXJlEAESCAoEVmlldxAC",
+            "Eg4KCk5vbnBheWFibGUQAxILCgdQYXlhYmxlEAQiUgoNQ29udHJhY3RTdGF0",
+            "ZRIUCgxlbmVyZ3lfdXNhZ2UYASABKAMSFQoNZW5lcmd5X2ZhY3RvchgCIAEo",
+            "AxIUCgx1cGRhdGVfY3ljbGUYAyABKAMihwEKE0NyZWF0ZVNtYXJ0Q29udHJh",
+            "Y3QSFQoNb3duZXJfYWRkcmVzcxgBIAEoDBItCgxuZXdfY29udHJhY3QYAiAB",
+            "KAsyFy5wcm90b2NvbC5TbWFydENvbnRyYWN0EhgKEGNhbGxfdG9rZW5fdmFs",
+            "dWUYAyABKAMSEAoIdG9rZW5faWQYBCABKAMilQEKFFRyaWdnZXJTbWFydENv",
+            "bnRyYWN0EhUKDW93bmVyX2FkZHJlc3MYASABKAwSGAoQY29udHJhY3RfYWRk",
+            "cmVzcxgCIAEoDBISCgpjYWxsX3ZhbHVlGAMgASgDEgwKBGRhdGEYBCABKAwS",
+            "GAoQY2FsbF90b2tlbl92YWx1ZRgFIAEoAxIQCgh0b2tlbl9pZBgGIAEoAyJD",
+            "ChBDbGVhckFCSUNvbnRyYWN0EhUKDW93bmVyX2FkZHJlc3MYASABKAwSGAoQ",
+            "Y29udHJhY3RfYWRkcmVzcxgCIAEoDCJvChVVcGRhdGVTZXR0aW5nQ29udHJh",
+            "Y3QSFQoNb3duZXJfYWRkcmVzcxgBIAEoDBIYChBjb250cmFjdF9hZGRyZXNz",
+            "GAIgASgMEiUKHWNvbnN1bWVfdXNlcl9yZXNvdXJjZV9wZXJjZW50GAMgASgD",
+            "ImkKGVVwZGF0ZUVuZXJneUxpbWl0Q29udHJhY3QSFQoNb3duZXJfYWRkcmVz",
+            "cxgBIAEoDBIYChBjb250cmFjdF9hZGRyZXNzGAIgASgMEhsKE29yaWdpbl9l",
+            "bmVyZ3lfbGltaXQYAyABKAMikQEKGFNtYXJ0Q29udHJhY3REYXRhV3JhcHBl",
+            "chIvCg5zbWFydF9jb250cmFjdBgBIAEoCzIXLnByb3RvY29sLlNtYXJ0Q29u",
+            "dHJhY3QSEwoLcnVudGltZWNvZGUYAiABKAwSLwoOY29udHJhY3Rfc3RhdGUY",
+            "AyABKAsyFy5wcm90b2NvbC5Db250cmFjdFN0YXRlQlkKGG9yZy50cm9uLnBy",
+            "b3Rvcy5jb250cmFjdFopZ2l0aHViLmNvbS90cm9ucHJvdG9jb2wvZ3JwYy1n",
+            "YXRld2F5L2NvcmWqAhFUcm9uLk5ldC5Qcm90b2NvbGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Tron.Net.Protocol.TronReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.SmartContract), global::Tron.Net.Protocol.SmartContract.Parser, new[]{ "OriginAddress", "ContractAddress", "Abi", "Bytecode", "CallValue", "ConsumeUserResourcePercent", "Name", "OriginEnergyLimit", "CodeHash", "TrxHash" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.SmartContract.Types.ABI), global::Tron.Net.Protocol.SmartContract.Types.ABI.Parser, new[]{ "Entrys" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry), global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry.Parser, new[]{ "Anonymous", "Constant", "Name", "Inputs", "Outputs", "Type", "Payable", "StateMutability" }, null, new[]{ typeof(global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry.Types.EntryType), typeof(global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry.Types.StateMutabilityType) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry.Types.Param), global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry.Types.Param.Parser, new[]{ "Indexed", "Name", "Type" }, null, null, null, null)})})}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.SmartContract), global::Tron.Net.Protocol.SmartContract.Parser, new[]{ "OriginAddress", "ContractAddress", "Abi", "Bytecode", "CallValue", "ConsumeUserResourcePercent", "Name", "OriginEnergyLimit", "CodeHash", "TrxHash", "Version" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.SmartContract.Types.ABI), global::Tron.Net.Protocol.SmartContract.Types.ABI.Parser, new[]{ "Entrys" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry), global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry.Parser, new[]{ "Anonymous", "Constant", "Name", "Inputs", "Outputs", "Type", "Payable", "StateMutability" }, null, new[]{ typeof(global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry.Types.EntryType), typeof(global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry.Types.StateMutabilityType) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry.Types.Param), global::Tron.Net.Protocol.SmartContract.Types.ABI.Types.Entry.Types.Param.Parser, new[]{ "Indexed", "Name", "Type" }, null, null, null, null)})})}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.ContractState), global::Tron.Net.Protocol.ContractState.Parser, new[]{ "EnergyUsage", "EnergyFactor", "UpdateCycle" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.CreateSmartContract), global::Tron.Net.Protocol.CreateSmartContract.Parser, new[]{ "OwnerAddress", "NewContract", "CallTokenValue", "TokenId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.TriggerSmartContract), global::Tron.Net.Protocol.TriggerSmartContract.Parser, new[]{ "OwnerAddress", "ContractAddress", "CallValue", "Data", "CallTokenValue", "TokenId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.ClearABIContract), global::Tron.Net.Protocol.ClearABIContract.Parser, new[]{ "OwnerAddress", "ContractAddress" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.UpdateSettingContract), global::Tron.Net.Protocol.UpdateSettingContract.Parser, new[]{ "OwnerAddress", "ContractAddress", "ConsumeUserResourcePercent" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.UpdateEnergyLimitContract), global::Tron.Net.Protocol.UpdateEnergyLimitContract.Parser, new[]{ "OwnerAddress", "ContractAddress", "OriginEnergyLimit" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.SmartContractDataWrapper), global::Tron.Net.Protocol.SmartContractDataWrapper.Parser, new[]{ "SmartContract", "Runtimecode" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Tron.Net.Protocol.SmartContractDataWrapper), global::Tron.Net.Protocol.SmartContractDataWrapper.Parser, new[]{ "SmartContract", "Runtimecode", "ContractState" }, null, null, null, null)
           }));
     }
     #endregion
@@ -124,6 +128,7 @@ namespace Tron.Net.Protocol {
       originEnergyLimit_ = other.originEnergyLimit_;
       codeHash_ = other.codeHash_;
       trxHash_ = other.trxHash_;
+      version_ = other.version_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -253,6 +258,18 @@ namespace Tron.Net.Protocol {
       }
     }
 
+    /// <summary>Field number for the "version" field.</summary>
+    public const int VersionFieldNumber = 11;
+    private int version_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Version {
+      get { return version_; }
+      set {
+        version_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -278,6 +295,7 @@ namespace Tron.Net.Protocol {
       if (OriginEnergyLimit != other.OriginEnergyLimit) return false;
       if (CodeHash != other.CodeHash) return false;
       if (TrxHash != other.TrxHash) return false;
+      if (Version != other.Version) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -295,6 +313,7 @@ namespace Tron.Net.Protocol {
       if (OriginEnergyLimit != 0L) hash ^= OriginEnergyLimit.GetHashCode();
       if (CodeHash.Length != 0) hash ^= CodeHash.GetHashCode();
       if (TrxHash.Length != 0) hash ^= TrxHash.GetHashCode();
+      if (Version != 0) hash ^= Version.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -353,6 +372,10 @@ namespace Tron.Net.Protocol {
         output.WriteRawTag(82);
         output.WriteBytes(TrxHash);
       }
+      if (Version != 0) {
+        output.WriteRawTag(88);
+        output.WriteInt32(Version);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -403,6 +426,10 @@ namespace Tron.Net.Protocol {
         output.WriteRawTag(82);
         output.WriteBytes(TrxHash);
       }
+      if (Version != 0) {
+        output.WriteRawTag(88);
+        output.WriteInt32(Version);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -442,6 +469,9 @@ namespace Tron.Net.Protocol {
       }
       if (TrxHash.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeBytesSize(TrxHash);
+      }
+      if (Version != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Version);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -487,6 +517,9 @@ namespace Tron.Net.Protocol {
       }
       if (other.TrxHash.Length != 0) {
         TrxHash = other.TrxHash;
+      }
+      if (other.Version != 0) {
+        Version = other.Version;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -546,6 +579,10 @@ namespace Tron.Net.Protocol {
             TrxHash = input.ReadBytes();
             break;
           }
+          case 88: {
+            Version = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -602,6 +639,10 @@ namespace Tron.Net.Protocol {
           }
           case 82: {
             TrxHash = input.ReadBytes();
+            break;
+          }
+          case 88: {
+            Version = input.ReadInt32();
             break;
           }
         }
@@ -1523,6 +1564,269 @@ namespace Tron.Net.Protocol {
 
   }
 
+  public sealed partial class ContractState : pb::IMessage<ContractState>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ContractState> _parser = new pb::MessageParser<ContractState>(() => new ContractState());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ContractState> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Tron.Net.Protocol.SmartContractReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ContractState() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ContractState(ContractState other) : this() {
+      energyUsage_ = other.energyUsage_;
+      energyFactor_ = other.energyFactor_;
+      updateCycle_ = other.updateCycle_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ContractState Clone() {
+      return new ContractState(this);
+    }
+
+    /// <summary>Field number for the "energy_usage" field.</summary>
+    public const int EnergyUsageFieldNumber = 1;
+    private long energyUsage_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long EnergyUsage {
+      get { return energyUsage_; }
+      set {
+        energyUsage_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "energy_factor" field.</summary>
+    public const int EnergyFactorFieldNumber = 2;
+    private long energyFactor_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long EnergyFactor {
+      get { return energyFactor_; }
+      set {
+        energyFactor_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "update_cycle" field.</summary>
+    public const int UpdateCycleFieldNumber = 3;
+    private long updateCycle_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long UpdateCycle {
+      get { return updateCycle_; }
+      set {
+        updateCycle_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ContractState);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ContractState other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (EnergyUsage != other.EnergyUsage) return false;
+      if (EnergyFactor != other.EnergyFactor) return false;
+      if (UpdateCycle != other.UpdateCycle) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (EnergyUsage != 0L) hash ^= EnergyUsage.GetHashCode();
+      if (EnergyFactor != 0L) hash ^= EnergyFactor.GetHashCode();
+      if (UpdateCycle != 0L) hash ^= UpdateCycle.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (EnergyUsage != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(EnergyUsage);
+      }
+      if (EnergyFactor != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(EnergyFactor);
+      }
+      if (UpdateCycle != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(UpdateCycle);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (EnergyUsage != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(EnergyUsage);
+      }
+      if (EnergyFactor != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(EnergyFactor);
+      }
+      if (UpdateCycle != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(UpdateCycle);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (EnergyUsage != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(EnergyUsage);
+      }
+      if (EnergyFactor != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(EnergyFactor);
+      }
+      if (UpdateCycle != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(UpdateCycle);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ContractState other) {
+      if (other == null) {
+        return;
+      }
+      if (other.EnergyUsage != 0L) {
+        EnergyUsage = other.EnergyUsage;
+      }
+      if (other.EnergyFactor != 0L) {
+        EnergyFactor = other.EnergyFactor;
+      }
+      if (other.UpdateCycle != 0L) {
+        UpdateCycle = other.UpdateCycle;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            EnergyUsage = input.ReadInt64();
+            break;
+          }
+          case 16: {
+            EnergyFactor = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            UpdateCycle = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            EnergyUsage = input.ReadInt64();
+            break;
+          }
+          case 16: {
+            EnergyFactor = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            UpdateCycle = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class CreateSmartContract : pb::IMessage<CreateSmartContract>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1537,7 +1841,7 @@ namespace Tron.Net.Protocol {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tron.Net.Protocol.SmartContractReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Tron.Net.Protocol.SmartContractReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1846,7 +2150,7 @@ namespace Tron.Net.Protocol {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tron.Net.Protocol.SmartContractReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Tron.Net.Protocol.SmartContractReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2220,7 +2524,7 @@ namespace Tron.Net.Protocol {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tron.Net.Protocol.SmartContractReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Tron.Net.Protocol.SmartContractReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2446,7 +2750,7 @@ namespace Tron.Net.Protocol {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tron.Net.Protocol.SmartContractReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Tron.Net.Protocol.SmartContractReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2709,7 +3013,7 @@ namespace Tron.Net.Protocol {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tron.Net.Protocol.SmartContractReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Tron.Net.Protocol.SmartContractReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2972,7 +3276,7 @@ namespace Tron.Net.Protocol {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tron.Net.Protocol.SmartContractReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Tron.Net.Protocol.SmartContractReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2994,6 +3298,7 @@ namespace Tron.Net.Protocol {
     public SmartContractDataWrapper(SmartContractDataWrapper other) : this() {
       smartContract_ = other.smartContract_ != null ? other.smartContract_.Clone() : null;
       runtimecode_ = other.runtimecode_;
+      contractState_ = other.contractState_ != null ? other.contractState_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3027,6 +3332,18 @@ namespace Tron.Net.Protocol {
       }
     }
 
+    /// <summary>Field number for the "contract_state" field.</summary>
+    public const int ContractStateFieldNumber = 3;
+    private global::Tron.Net.Protocol.ContractState contractState_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Tron.Net.Protocol.ContractState ContractState {
+      get { return contractState_; }
+      set {
+        contractState_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -3044,6 +3361,7 @@ namespace Tron.Net.Protocol {
       }
       if (!object.Equals(SmartContract, other.SmartContract)) return false;
       if (Runtimecode != other.Runtimecode) return false;
+      if (!object.Equals(ContractState, other.ContractState)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3053,6 +3371,7 @@ namespace Tron.Net.Protocol {
       int hash = 1;
       if (smartContract_ != null) hash ^= SmartContract.GetHashCode();
       if (Runtimecode.Length != 0) hash ^= Runtimecode.GetHashCode();
+      if (contractState_ != null) hash ^= ContractState.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3079,6 +3398,10 @@ namespace Tron.Net.Protocol {
         output.WriteRawTag(18);
         output.WriteBytes(Runtimecode);
       }
+      if (contractState_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(ContractState);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3097,6 +3420,10 @@ namespace Tron.Net.Protocol {
         output.WriteRawTag(18);
         output.WriteBytes(Runtimecode);
       }
+      if (contractState_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(ContractState);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3112,6 +3439,9 @@ namespace Tron.Net.Protocol {
       }
       if (Runtimecode.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeBytesSize(Runtimecode);
+      }
+      if (contractState_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ContractState);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3133,6 +3463,12 @@ namespace Tron.Net.Protocol {
       }
       if (other.Runtimecode.Length != 0) {
         Runtimecode = other.Runtimecode;
+      }
+      if (other.contractState_ != null) {
+        if (contractState_ == null) {
+          ContractState = new global::Tron.Net.Protocol.ContractState();
+        }
+        ContractState.MergeFrom(other.ContractState);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3160,6 +3496,13 @@ namespace Tron.Net.Protocol {
             Runtimecode = input.ReadBytes();
             break;
           }
+          case 26: {
+            if (contractState_ == null) {
+              ContractState = new global::Tron.Net.Protocol.ContractState();
+            }
+            input.ReadMessage(ContractState);
+            break;
+          }
         }
       }
     #endif
@@ -3184,6 +3527,13 @@ namespace Tron.Net.Protocol {
           }
           case 18: {
             Runtimecode = input.ReadBytes();
+            break;
+          }
+          case 26: {
+            if (contractState_ == null) {
+              ContractState = new global::Tron.Net.Protocol.ContractState();
+            }
+            input.ReadMessage(ContractState);
             break;
           }
         }

@@ -19,11 +19,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Google.Api.CommonProtos" Version="2.6.0" />
-    <PackageReference Include="Google.Protobuf" Version="3.21.5" />
-    <PackageReference Include="Google.Protobuf.Tools" Version="3.21.5" />
-    <PackageReference Include="Grpc.Core.Api" Version="2.48.0" />
-    <PackageReference Include="Grpc.Tools" Version="2.48.0">
+    <PackageReference Include="Google.Api.CommonProtos" Version="2.15.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.27.1" />
+    <PackageReference Include="Google.Protobuf.Tools" Version="3.27.1" />
+    <PackageReference Include="Grpc.Core.Api" Version="2.63.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.64.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

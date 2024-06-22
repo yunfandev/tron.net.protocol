@@ -88,11 +88,23 @@ namespace Tron.Net.Protocol {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.FreezeBalanceContract> __Marshaller_protocol_FreezeBalanceContract = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.FreezeBalanceContract.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.FreezeBalanceV2Contract> __Marshaller_protocol_FreezeBalanceV2Contract = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.FreezeBalanceV2Contract.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.UnfreezeBalanceContract> __Marshaller_protocol_UnfreezeBalanceContract = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.UnfreezeBalanceContract.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.UnfreezeBalanceV2Contract> __Marshaller_protocol_UnfreezeBalanceV2Contract = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.UnfreezeBalanceV2Contract.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.UnfreezeAssetContract> __Marshaller_protocol_UnfreezeAssetContract = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.UnfreezeAssetContract.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.WithdrawBalanceContract> __Marshaller_protocol_WithdrawBalanceContract = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.WithdrawBalanceContract.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.WithdrawExpireUnfreezeContract> __Marshaller_protocol_WithdrawExpireUnfreezeContract = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.WithdrawExpireUnfreezeContract.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.DelegateResourceContract> __Marshaller_protocol_DelegateResourceContract = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.DelegateResourceContract.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.UnDelegateResourceContract> __Marshaller_protocol_UnDelegateResourceContract = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.UnDelegateResourceContract.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.CancelAllUnfreezeV2Contract> __Marshaller_protocol_CancelAllUnfreezeV2Contract = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.CancelAllUnfreezeV2Contract.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.UpdateAssetContract> __Marshaller_protocol_UpdateAssetContract = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.UpdateAssetContract.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -162,6 +174,8 @@ namespace Tron.Net.Protocol {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.TriggerSmartContract> __Marshaller_protocol_TriggerSmartContract = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.TriggerSmartContract.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.EstimateEnergyMessage> __Marshaller_protocol_EstimateEnergyMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.EstimateEnergyMessage.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.ClearABIContract> __Marshaller_protocol_ClearABIContract = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.ClearABIContract.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.WitnessList> __Marshaller_protocol_WitnessList = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.WitnessList.Parser));
@@ -171,6 +185,18 @@ namespace Tron.Net.Protocol {
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.DelegatedResourceList> __Marshaller_protocol_DelegatedResourceList = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.DelegatedResourceList.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.DelegatedResourceAccountIndex> __Marshaller_protocol_DelegatedResourceAccountIndex = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.DelegatedResourceAccountIndex.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage> __Marshaller_protocol_CanDelegatedMaxSizeRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage> __Marshaller_protocol_CanDelegatedMaxSizeResponseMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage> __Marshaller_protocol_GetAvailableUnfreezeCountRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage> __Marshaller_protocol_GetAvailableUnfreezeCountResponseMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage> __Marshaller_protocol_CanWithdrawUnfreezeAmountRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage> __Marshaller_protocol_CanWithdrawUnfreezeAmountResponseMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.ProposalList> __Marshaller_protocol_ProposalList = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.ProposalList.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -183,20 +209,6 @@ namespace Tron.Net.Protocol {
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.Exchange> __Marshaller_protocol_Exchange = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.Exchange.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.ChainParameters> __Marshaller_protocol_ChainParameters = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.ChainParameters.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Tron.Net.Protocol.TransactionSign> __Marshaller_protocol_TransactionSign = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.TransactionSign.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Tron.Net.Protocol.EasyTransferAssetMessage> __Marshaller_protocol_EasyTransferAssetMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.EasyTransferAssetMessage.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Tron.Net.Protocol.EasyTransferResponse> __Marshaller_protocol_EasyTransferResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.EasyTransferResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Tron.Net.Protocol.EasyTransferAssetByPrivateMessage> __Marshaller_protocol_EasyTransferAssetByPrivateMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.EasyTransferAssetByPrivateMessage.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Tron.Net.Protocol.EasyTransferMessage> __Marshaller_protocol_EasyTransferMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.EasyTransferMessage.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Tron.Net.Protocol.EasyTransferByPrivateMessage> __Marshaller_protocol_EasyTransferByPrivateMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.EasyTransferByPrivateMessage.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Tron.Net.Protocol.AddressPrKeyPairMessage> __Marshaller_protocol_AddressPrKeyPairMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.AddressPrKeyPairMessage.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.TransactionInfo> __Marshaller_protocol_TransactionInfo = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.TransactionInfo.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -273,6 +285,8 @@ namespace Tron.Net.Protocol {
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.TransactionIdList> __Marshaller_protocol_TransactionIdList = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.TransactionIdList.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.BlockReq> __Marshaller_protocol_BlockReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.BlockReq.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.PricesResponseMessage> __Marshaller_protocol_PricesResponseMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.PricesResponseMessage.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tron.Net.Protocol.Account, global::Tron.Net.Protocol.Account> __Method_GetAccount = new grpc::Method<global::Tron.Net.Protocol.Account, global::Tron.Net.Protocol.Account>(
@@ -499,6 +513,14 @@ namespace Tron.Net.Protocol {
         __Marshaller_protocol_TransactionExtention);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.FreezeBalanceV2Contract, global::Tron.Net.Protocol.TransactionExtention> __Method_FreezeBalanceV2 = new grpc::Method<global::Tron.Net.Protocol.FreezeBalanceV2Contract, global::Tron.Net.Protocol.TransactionExtention>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "FreezeBalanceV2",
+        __Marshaller_protocol_FreezeBalanceV2Contract,
+        __Marshaller_protocol_TransactionExtention);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tron.Net.Protocol.UnfreezeBalanceContract, global::Tron.Net.Protocol.Transaction> __Method_UnfreezeBalance = new grpc::Method<global::Tron.Net.Protocol.UnfreezeBalanceContract, global::Tron.Net.Protocol.Transaction>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -512,6 +534,14 @@ namespace Tron.Net.Protocol {
         __ServiceName,
         "UnfreezeBalance2",
         __Marshaller_protocol_UnfreezeBalanceContract,
+        __Marshaller_protocol_TransactionExtention);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.UnfreezeBalanceV2Contract, global::Tron.Net.Protocol.TransactionExtention> __Method_UnfreezeBalanceV2 = new grpc::Method<global::Tron.Net.Protocol.UnfreezeBalanceV2Contract, global::Tron.Net.Protocol.TransactionExtention>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UnfreezeBalanceV2",
+        __Marshaller_protocol_UnfreezeBalanceV2Contract,
         __Marshaller_protocol_TransactionExtention);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -544,6 +574,38 @@ namespace Tron.Net.Protocol {
         __ServiceName,
         "WithdrawBalance2",
         __Marshaller_protocol_WithdrawBalanceContract,
+        __Marshaller_protocol_TransactionExtention);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.WithdrawExpireUnfreezeContract, global::Tron.Net.Protocol.TransactionExtention> __Method_WithdrawExpireUnfreeze = new grpc::Method<global::Tron.Net.Protocol.WithdrawExpireUnfreezeContract, global::Tron.Net.Protocol.TransactionExtention>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "WithdrawExpireUnfreeze",
+        __Marshaller_protocol_WithdrawExpireUnfreezeContract,
+        __Marshaller_protocol_TransactionExtention);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.DelegateResourceContract, global::Tron.Net.Protocol.TransactionExtention> __Method_DelegateResource = new grpc::Method<global::Tron.Net.Protocol.DelegateResourceContract, global::Tron.Net.Protocol.TransactionExtention>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DelegateResource",
+        __Marshaller_protocol_DelegateResourceContract,
+        __Marshaller_protocol_TransactionExtention);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.UnDelegateResourceContract, global::Tron.Net.Protocol.TransactionExtention> __Method_UnDelegateResource = new grpc::Method<global::Tron.Net.Protocol.UnDelegateResourceContract, global::Tron.Net.Protocol.TransactionExtention>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UnDelegateResource",
+        __Marshaller_protocol_UnDelegateResourceContract,
+        __Marshaller_protocol_TransactionExtention);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.CancelAllUnfreezeV2Contract, global::Tron.Net.Protocol.TransactionExtention> __Method_CancelAllUnfreezeV2 = new grpc::Method<global::Tron.Net.Protocol.CancelAllUnfreezeV2Contract, global::Tron.Net.Protocol.TransactionExtention>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CancelAllUnfreezeV2",
+        __Marshaller_protocol_CancelAllUnfreezeV2Contract,
         __Marshaller_protocol_TransactionExtention);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -883,6 +945,14 @@ namespace Tron.Net.Protocol {
         __Marshaller_protocol_TransactionExtention);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.TriggerSmartContract, global::Tron.Net.Protocol.EstimateEnergyMessage> __Method_EstimateEnergy = new grpc::Method<global::Tron.Net.Protocol.TriggerSmartContract, global::Tron.Net.Protocol.EstimateEnergyMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "EstimateEnergy",
+        __Marshaller_protocol_TriggerSmartContract,
+        __Marshaller_protocol_EstimateEnergyMessage);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tron.Net.Protocol.ClearABIContract, global::Tron.Net.Protocol.TransactionExtention> __Method_ClearContractABI = new grpc::Method<global::Tron.Net.Protocol.ClearABIContract, global::Tron.Net.Protocol.TransactionExtention>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -907,12 +977,52 @@ namespace Tron.Net.Protocol {
         __Marshaller_protocol_DelegatedResourceList);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.DelegatedResourceMessage, global::Tron.Net.Protocol.DelegatedResourceList> __Method_GetDelegatedResourceV2 = new grpc::Method<global::Tron.Net.Protocol.DelegatedResourceMessage, global::Tron.Net.Protocol.DelegatedResourceList>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetDelegatedResourceV2",
+        __Marshaller_protocol_DelegatedResourceMessage,
+        __Marshaller_protocol_DelegatedResourceList);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.DelegatedResourceAccountIndex> __Method_GetDelegatedResourceAccountIndex = new grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.DelegatedResourceAccountIndex>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetDelegatedResourceAccountIndex",
         __Marshaller_protocol_BytesMessage,
         __Marshaller_protocol_DelegatedResourceAccountIndex);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.DelegatedResourceAccountIndex> __Method_GetDelegatedResourceAccountIndexV2 = new grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.DelegatedResourceAccountIndex>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetDelegatedResourceAccountIndexV2",
+        __Marshaller_protocol_BytesMessage,
+        __Marshaller_protocol_DelegatedResourceAccountIndex);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage, global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage> __Method_GetCanDelegatedMaxSize = new grpc::Method<global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage, global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetCanDelegatedMaxSize",
+        __Marshaller_protocol_CanDelegatedMaxSizeRequestMessage,
+        __Marshaller_protocol_CanDelegatedMaxSizeResponseMessage);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage, global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage> __Method_GetAvailableUnfreezeCount = new grpc::Method<global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage, global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetAvailableUnfreezeCount",
+        __Marshaller_protocol_GetAvailableUnfreezeCountRequestMessage,
+        __Marshaller_protocol_GetAvailableUnfreezeCountResponseMessage);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage, global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage> __Method_GetCanWithdrawUnfreezeAmount = new grpc::Method<global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage, global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetCanWithdrawUnfreezeAmount",
+        __Marshaller_protocol_CanWithdrawUnfreezeAmountRequestMessage,
+        __Marshaller_protocol_CanWithdrawUnfreezeAmountResponseMessage);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.ProposalList> __Method_ListProposals = new grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.ProposalList>(
@@ -1003,70 +1113,6 @@ namespace Tron.Net.Protocol {
         __Marshaller_protocol_NumberMessage);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Tron.Net.Protocol.TransactionSign, global::Tron.Net.Protocol.Transaction> __Method_GetTransactionSign = new grpc::Method<global::Tron.Net.Protocol.TransactionSign, global::Tron.Net.Protocol.Transaction>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetTransactionSign",
-        __Marshaller_protocol_TransactionSign,
-        __Marshaller_protocol_Transaction);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Tron.Net.Protocol.TransactionSign, global::Tron.Net.Protocol.TransactionExtention> __Method_GetTransactionSign2 = new grpc::Method<global::Tron.Net.Protocol.TransactionSign, global::Tron.Net.Protocol.TransactionExtention>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetTransactionSign2",
-        __Marshaller_protocol_TransactionSign,
-        __Marshaller_protocol_TransactionExtention);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.BytesMessage> __Method_CreateAddress = new grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.BytesMessage>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "CreateAddress",
-        __Marshaller_protocol_BytesMessage,
-        __Marshaller_protocol_BytesMessage);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Tron.Net.Protocol.EasyTransferAssetMessage, global::Tron.Net.Protocol.EasyTransferResponse> __Method_EasyTransferAsset = new grpc::Method<global::Tron.Net.Protocol.EasyTransferAssetMessage, global::Tron.Net.Protocol.EasyTransferResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "EasyTransferAsset",
-        __Marshaller_protocol_EasyTransferAssetMessage,
-        __Marshaller_protocol_EasyTransferResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Tron.Net.Protocol.EasyTransferAssetByPrivateMessage, global::Tron.Net.Protocol.EasyTransferResponse> __Method_EasyTransferAssetByPrivate = new grpc::Method<global::Tron.Net.Protocol.EasyTransferAssetByPrivateMessage, global::Tron.Net.Protocol.EasyTransferResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "EasyTransferAssetByPrivate",
-        __Marshaller_protocol_EasyTransferAssetByPrivateMessage,
-        __Marshaller_protocol_EasyTransferResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Tron.Net.Protocol.EasyTransferMessage, global::Tron.Net.Protocol.EasyTransferResponse> __Method_EasyTransfer = new grpc::Method<global::Tron.Net.Protocol.EasyTransferMessage, global::Tron.Net.Protocol.EasyTransferResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "EasyTransfer",
-        __Marshaller_protocol_EasyTransferMessage,
-        __Marshaller_protocol_EasyTransferResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Tron.Net.Protocol.EasyTransferByPrivateMessage, global::Tron.Net.Protocol.EasyTransferResponse> __Method_EasyTransferByPrivate = new grpc::Method<global::Tron.Net.Protocol.EasyTransferByPrivateMessage, global::Tron.Net.Protocol.EasyTransferResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "EasyTransferByPrivate",
-        __Marshaller_protocol_EasyTransferByPrivateMessage,
-        __Marshaller_protocol_EasyTransferResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.AddressPrKeyPairMessage> __Method_GenerateAddress = new grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.AddressPrKeyPairMessage>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GenerateAddress",
-        __Marshaller_protocol_EmptyMessage,
-        __Marshaller_protocol_AddressPrKeyPairMessage);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.TransactionInfo> __Method_GetTransactionInfoById = new grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.TransactionInfo>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -1080,14 +1126,6 @@ namespace Tron.Net.Protocol {
         __ServiceName,
         "AccountPermissionUpdate",
         __Marshaller_protocol_AccountPermissionUpdateContract,
-        __Marshaller_protocol_TransactionExtention);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Tron.Net.Protocol.TransactionSign, global::Tron.Net.Protocol.TransactionExtention> __Method_AddSign = new grpc::Method<global::Tron.Net.Protocol.TransactionSign, global::Tron.Net.Protocol.TransactionExtention>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "AddSign",
-        __Marshaller_protocol_TransactionSign,
         __Marshaller_protocol_TransactionExtention);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -1393,6 +1431,30 @@ namespace Tron.Net.Protocol {
         "GetBlock",
         __Marshaller_protocol_BlockReq,
         __Marshaller_protocol_BlockExtention);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.PricesResponseMessage> __Method_GetBandwidthPrices = new grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.PricesResponseMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetBandwidthPrices",
+        __Marshaller_protocol_EmptyMessage,
+        __Marshaller_protocol_PricesResponseMessage);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.PricesResponseMessage> __Method_GetEnergyPrices = new grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.PricesResponseMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetEnergyPrices",
+        __Marshaller_protocol_EmptyMessage,
+        __Marshaller_protocol_PricesResponseMessage);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.PricesResponseMessage> __Method_GetMemoFee = new grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.PricesResponseMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetMemoFee",
+        __Marshaller_protocol_EmptyMessage,
+        __Marshaller_protocol_PricesResponseMessage);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -1705,6 +1767,18 @@ namespace Tron.Net.Protocol {
       }
 
       /// <summary>
+      ///Use this function when FreezeBalanceV2.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionExtention> FreezeBalanceV2(global::Tron.Net.Protocol.FreezeBalanceV2Contract request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
       ///Please use UnfreezeBalance2 instead of this function.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
@@ -1724,6 +1798,18 @@ namespace Tron.Net.Protocol {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionExtention> UnfreezeBalance2(global::Tron.Net.Protocol.UnfreezeBalanceContract request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      ///Use this function when UnfreezeBalanceV2.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionExtention> UnfreezeBalanceV2(global::Tron.Net.Protocol.UnfreezeBalanceV2Contract request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -1772,6 +1858,30 @@ namespace Tron.Net.Protocol {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionExtention> WithdrawBalance2(global::Tron.Net.Protocol.WithdrawBalanceContract request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionExtention> WithdrawExpireUnfreeze(global::Tron.Net.Protocol.WithdrawExpireUnfreezeContract request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionExtention> DelegateResource(global::Tron.Net.Protocol.DelegateResourceContract request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionExtention> UnDelegateResource(global::Tron.Net.Protocol.UnDelegateResourceContract request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionExtention> CancelAllUnfreezeV2(global::Tron.Net.Protocol.CancelAllUnfreezeV2Contract request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -2089,6 +2199,12 @@ namespace Tron.Net.Protocol {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.EstimateEnergyMessage> EstimateEnergy(global::Tron.Net.Protocol.TriggerSmartContract request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionExtention> ClearContractABI(global::Tron.Net.Protocol.ClearABIContract request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -2107,7 +2223,37 @@ namespace Tron.Net.Protocol {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.DelegatedResourceList> GetDelegatedResourceV2(global::Tron.Net.Protocol.DelegatedResourceMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.DelegatedResourceAccountIndex> GetDelegatedResourceAccountIndex(global::Tron.Net.Protocol.BytesMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.DelegatedResourceAccountIndex> GetDelegatedResourceAccountIndexV2(global::Tron.Net.Protocol.BytesMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage> GetCanDelegatedMaxSize(global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage> GetAvailableUnfreezeCount(global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage> GetCanWithdrawUnfreezeAmount(global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -2178,104 +2324,6 @@ namespace Tron.Net.Protocol {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      ///Please use GetTransactionSign2 instead of this function.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.Transaction> GetTransactionSign(global::Tron.Net.Protocol.TransactionSign request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      ///Use this function instead of GetTransactionSign.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionExtention> GetTransactionSign2(global::Tron.Net.Protocol.TransactionSign request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.BytesMessage> CreateAddress(global::Tron.Net.Protocol.BytesMessage request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.EasyTransferResponse> EasyTransferAsset(global::Tron.Net.Protocol.EasyTransferAssetMessage request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.EasyTransferResponse> EasyTransferAssetByPrivate(global::Tron.Net.Protocol.EasyTransferAssetByPrivateMessage request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.EasyTransferResponse> EasyTransfer(global::Tron.Net.Protocol.EasyTransferMessage request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.EasyTransferResponse> EasyTransferByPrivate(global::Tron.Net.Protocol.EasyTransferByPrivateMessage request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.AddressPrKeyPairMessage> GenerateAddress(global::Tron.Net.Protocol.EmptyMessage request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionInfo> GetTransactionInfoById(global::Tron.Net.Protocol.BytesMessage request, grpc::ServerCallContext context)
       {
@@ -2284,12 +2332,6 @@ namespace Tron.Net.Protocol {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionExtention> AccountPermissionUpdate(global::Tron.Net.Protocol.AccountPermissionUpdateContract request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionExtention> AddSign(global::Tron.Net.Protocol.TransactionSign request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -2530,6 +2572,24 @@ namespace Tron.Net.Protocol {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.BlockExtention> GetBlock(global::Tron.Net.Protocol.BlockReq request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.PricesResponseMessage> GetBandwidthPrices(global::Tron.Net.Protocol.EmptyMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.PricesResponseMessage> GetEnergyPrices(global::Tron.Net.Protocol.EmptyMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.PricesResponseMessage> GetMemoFee(global::Tron.Net.Protocol.EmptyMessage request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -3740,6 +3800,54 @@ namespace Tron.Net.Protocol {
         return CallInvoker.AsyncUnaryCall(__Method_FreezeBalance2, null, options, request);
       }
       /// <summary>
+      ///Use this function when FreezeBalanceV2.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.TransactionExtention FreezeBalanceV2(global::Tron.Net.Protocol.FreezeBalanceV2Contract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return FreezeBalanceV2(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Use this function when FreezeBalanceV2.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.TransactionExtention FreezeBalanceV2(global::Tron.Net.Protocol.FreezeBalanceV2Contract request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_FreezeBalanceV2, null, options, request);
+      }
+      /// <summary>
+      ///Use this function when FreezeBalanceV2.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> FreezeBalanceV2Async(global::Tron.Net.Protocol.FreezeBalanceV2Contract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return FreezeBalanceV2Async(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Use this function when FreezeBalanceV2.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> FreezeBalanceV2Async(global::Tron.Net.Protocol.FreezeBalanceV2Contract request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_FreezeBalanceV2, null, options, request);
+      }
+      /// <summary>
       ///Please use UnfreezeBalance2 instead of this function.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -3834,6 +3942,54 @@ namespace Tron.Net.Protocol {
       public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> UnfreezeBalance2Async(global::Tron.Net.Protocol.UnfreezeBalanceContract request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_UnfreezeBalance2, null, options, request);
+      }
+      /// <summary>
+      ///Use this function when UnfreezeBalanceV2.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.TransactionExtention UnfreezeBalanceV2(global::Tron.Net.Protocol.UnfreezeBalanceV2Contract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UnfreezeBalanceV2(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Use this function when UnfreezeBalanceV2.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.TransactionExtention UnfreezeBalanceV2(global::Tron.Net.Protocol.UnfreezeBalanceV2Contract request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UnfreezeBalanceV2, null, options, request);
+      }
+      /// <summary>
+      ///Use this function when UnfreezeBalanceV2.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> UnfreezeBalanceV2Async(global::Tron.Net.Protocol.UnfreezeBalanceV2Contract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UnfreezeBalanceV2Async(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Use this function when UnfreezeBalanceV2.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> UnfreezeBalanceV2Async(global::Tron.Net.Protocol.UnfreezeBalanceV2Contract request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UnfreezeBalanceV2, null, options, request);
       }
       /// <summary>
       ///Please use UnfreezeAsset2 instead of this function.
@@ -4026,6 +4182,86 @@ namespace Tron.Net.Protocol {
       public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> WithdrawBalance2Async(global::Tron.Net.Protocol.WithdrawBalanceContract request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_WithdrawBalance2, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.TransactionExtention WithdrawExpireUnfreeze(global::Tron.Net.Protocol.WithdrawExpireUnfreezeContract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return WithdrawExpireUnfreeze(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.TransactionExtention WithdrawExpireUnfreeze(global::Tron.Net.Protocol.WithdrawExpireUnfreezeContract request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_WithdrawExpireUnfreeze, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> WithdrawExpireUnfreezeAsync(global::Tron.Net.Protocol.WithdrawExpireUnfreezeContract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return WithdrawExpireUnfreezeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> WithdrawExpireUnfreezeAsync(global::Tron.Net.Protocol.WithdrawExpireUnfreezeContract request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_WithdrawExpireUnfreeze, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.TransactionExtention DelegateResource(global::Tron.Net.Protocol.DelegateResourceContract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DelegateResource(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.TransactionExtention DelegateResource(global::Tron.Net.Protocol.DelegateResourceContract request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DelegateResource, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> DelegateResourceAsync(global::Tron.Net.Protocol.DelegateResourceContract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DelegateResourceAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> DelegateResourceAsync(global::Tron.Net.Protocol.DelegateResourceContract request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DelegateResource, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.TransactionExtention UnDelegateResource(global::Tron.Net.Protocol.UnDelegateResourceContract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UnDelegateResource(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.TransactionExtention UnDelegateResource(global::Tron.Net.Protocol.UnDelegateResourceContract request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UnDelegateResource, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> UnDelegateResourceAsync(global::Tron.Net.Protocol.UnDelegateResourceContract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UnDelegateResourceAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> UnDelegateResourceAsync(global::Tron.Net.Protocol.UnDelegateResourceContract request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UnDelegateResource, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.TransactionExtention CancelAllUnfreezeV2(global::Tron.Net.Protocol.CancelAllUnfreezeV2Contract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CancelAllUnfreezeV2(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.TransactionExtention CancelAllUnfreezeV2(global::Tron.Net.Protocol.CancelAllUnfreezeV2Contract request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CancelAllUnfreezeV2, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> CancelAllUnfreezeV2Async(global::Tron.Net.Protocol.CancelAllUnfreezeV2Contract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CancelAllUnfreezeV2Async(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> CancelAllUnfreezeV2Async(global::Tron.Net.Protocol.CancelAllUnfreezeV2Contract request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CancelAllUnfreezeV2, null, options, request);
       }
       /// <summary>
       ///Please use UpdateAsset2 instead of this function.
@@ -5148,6 +5384,26 @@ namespace Tron.Net.Protocol {
         return CallInvoker.AsyncUnaryCall(__Method_TriggerConstantContract, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.EstimateEnergyMessage EstimateEnergy(global::Tron.Net.Protocol.TriggerSmartContract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return EstimateEnergy(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.EstimateEnergyMessage EstimateEnergy(global::Tron.Net.Protocol.TriggerSmartContract request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_EstimateEnergy, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.EstimateEnergyMessage> EstimateEnergyAsync(global::Tron.Net.Protocol.TriggerSmartContract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return EstimateEnergyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.EstimateEnergyMessage> EstimateEnergyAsync(global::Tron.Net.Protocol.TriggerSmartContract request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_EstimateEnergy, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Tron.Net.Protocol.TransactionExtention ClearContractABI(global::Tron.Net.Protocol.ClearABIContract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return ClearContractABI(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -5208,6 +5464,26 @@ namespace Tron.Net.Protocol {
         return CallInvoker.AsyncUnaryCall(__Method_GetDelegatedResource, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.DelegatedResourceList GetDelegatedResourceV2(global::Tron.Net.Protocol.DelegatedResourceMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDelegatedResourceV2(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.DelegatedResourceList GetDelegatedResourceV2(global::Tron.Net.Protocol.DelegatedResourceMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetDelegatedResourceV2, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.DelegatedResourceList> GetDelegatedResourceV2Async(global::Tron.Net.Protocol.DelegatedResourceMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDelegatedResourceV2Async(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.DelegatedResourceList> GetDelegatedResourceV2Async(global::Tron.Net.Protocol.DelegatedResourceMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetDelegatedResourceV2, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Tron.Net.Protocol.DelegatedResourceAccountIndex GetDelegatedResourceAccountIndex(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetDelegatedResourceAccountIndex(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -5226,6 +5502,86 @@ namespace Tron.Net.Protocol {
       public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.DelegatedResourceAccountIndex> GetDelegatedResourceAccountIndexAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetDelegatedResourceAccountIndex, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.DelegatedResourceAccountIndex GetDelegatedResourceAccountIndexV2(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDelegatedResourceAccountIndexV2(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.DelegatedResourceAccountIndex GetDelegatedResourceAccountIndexV2(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetDelegatedResourceAccountIndexV2, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.DelegatedResourceAccountIndex> GetDelegatedResourceAccountIndexV2Async(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDelegatedResourceAccountIndexV2Async(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.DelegatedResourceAccountIndex> GetDelegatedResourceAccountIndexV2Async(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetDelegatedResourceAccountIndexV2, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage GetCanDelegatedMaxSize(global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetCanDelegatedMaxSize(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage GetCanDelegatedMaxSize(global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetCanDelegatedMaxSize, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage> GetCanDelegatedMaxSizeAsync(global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetCanDelegatedMaxSizeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage> GetCanDelegatedMaxSizeAsync(global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetCanDelegatedMaxSize, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage GetAvailableUnfreezeCount(global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetAvailableUnfreezeCount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage GetAvailableUnfreezeCount(global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetAvailableUnfreezeCount, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage> GetAvailableUnfreezeCountAsync(global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetAvailableUnfreezeCountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage> GetAvailableUnfreezeCountAsync(global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetAvailableUnfreezeCount, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage GetCanWithdrawUnfreezeAmount(global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetCanWithdrawUnfreezeAmount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage GetCanWithdrawUnfreezeAmount(global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetCanWithdrawUnfreezeAmount, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage> GetCanWithdrawUnfreezeAmountAsync(global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetCanWithdrawUnfreezeAmountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage> GetCanWithdrawUnfreezeAmountAsync(global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetCanWithdrawUnfreezeAmount, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Tron.Net.Protocol.ProposalList ListProposals(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
@@ -5447,398 +5803,6 @@ namespace Tron.Net.Protocol {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetNextMaintenanceTime, null, options, request);
       }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      ///Please use GetTransactionSign2 instead of this function.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.Transaction GetTransactionSign(global::Tron.Net.Protocol.TransactionSign request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetTransactionSign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      ///Please use GetTransactionSign2 instead of this function.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.Transaction GetTransactionSign(global::Tron.Net.Protocol.TransactionSign request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetTransactionSign, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      ///Please use GetTransactionSign2 instead of this function.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.Transaction> GetTransactionSignAsync(global::Tron.Net.Protocol.TransactionSign request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetTransactionSignAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      ///Please use GetTransactionSign2 instead of this function.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.Transaction> GetTransactionSignAsync(global::Tron.Net.Protocol.TransactionSign request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetTransactionSign, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      ///Use this function instead of GetTransactionSign.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.TransactionExtention GetTransactionSign2(global::Tron.Net.Protocol.TransactionSign request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetTransactionSign2(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      ///Use this function instead of GetTransactionSign.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.TransactionExtention GetTransactionSign2(global::Tron.Net.Protocol.TransactionSign request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetTransactionSign2, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      ///Use this function instead of GetTransactionSign.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> GetTransactionSign2Async(global::Tron.Net.Protocol.TransactionSign request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetTransactionSign2Async(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      ///Use this function instead of GetTransactionSign.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> GetTransactionSign2Async(global::Tron.Net.Protocol.TransactionSign request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetTransactionSign2, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.BytesMessage CreateAddress(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return CreateAddress(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.BytesMessage CreateAddress(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_CreateAddress, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.BytesMessage> CreateAddressAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return CreateAddressAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.BytesMessage> CreateAddressAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_CreateAddress, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.EasyTransferResponse EasyTransferAsset(global::Tron.Net.Protocol.EasyTransferAssetMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return EasyTransferAsset(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.EasyTransferResponse EasyTransferAsset(global::Tron.Net.Protocol.EasyTransferAssetMessage request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_EasyTransferAsset, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.EasyTransferResponse> EasyTransferAssetAsync(global::Tron.Net.Protocol.EasyTransferAssetMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return EasyTransferAssetAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.EasyTransferResponse> EasyTransferAssetAsync(global::Tron.Net.Protocol.EasyTransferAssetMessage request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_EasyTransferAsset, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.EasyTransferResponse EasyTransferAssetByPrivate(global::Tron.Net.Protocol.EasyTransferAssetByPrivateMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return EasyTransferAssetByPrivate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.EasyTransferResponse EasyTransferAssetByPrivate(global::Tron.Net.Protocol.EasyTransferAssetByPrivateMessage request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_EasyTransferAssetByPrivate, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.EasyTransferResponse> EasyTransferAssetByPrivateAsync(global::Tron.Net.Protocol.EasyTransferAssetByPrivateMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return EasyTransferAssetByPrivateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.EasyTransferResponse> EasyTransferAssetByPrivateAsync(global::Tron.Net.Protocol.EasyTransferAssetByPrivateMessage request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_EasyTransferAssetByPrivate, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.EasyTransferResponse EasyTransfer(global::Tron.Net.Protocol.EasyTransferMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return EasyTransfer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.EasyTransferResponse EasyTransfer(global::Tron.Net.Protocol.EasyTransferMessage request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_EasyTransfer, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.EasyTransferResponse> EasyTransferAsync(global::Tron.Net.Protocol.EasyTransferMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return EasyTransferAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.EasyTransferResponse> EasyTransferAsync(global::Tron.Net.Protocol.EasyTransferMessage request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_EasyTransfer, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.EasyTransferResponse EasyTransferByPrivate(global::Tron.Net.Protocol.EasyTransferByPrivateMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return EasyTransferByPrivate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.EasyTransferResponse EasyTransferByPrivate(global::Tron.Net.Protocol.EasyTransferByPrivateMessage request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_EasyTransferByPrivate, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.EasyTransferResponse> EasyTransferByPrivateAsync(global::Tron.Net.Protocol.EasyTransferByPrivateMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return EasyTransferByPrivateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.EasyTransferResponse> EasyTransferByPrivateAsync(global::Tron.Net.Protocol.EasyTransferByPrivateMessage request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_EasyTransferByPrivate, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.AddressPrKeyPairMessage GenerateAddress(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GenerateAddress(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.AddressPrKeyPairMessage GenerateAddress(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GenerateAddress, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.AddressPrKeyPairMessage> GenerateAddressAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GenerateAddressAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.AddressPrKeyPairMessage> GenerateAddressAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GenerateAddress, null, options, request);
-      }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Tron.Net.Protocol.TransactionInfo GetTransactionInfoById(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
@@ -5878,26 +5842,6 @@ namespace Tron.Net.Protocol {
       public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> AccountPermissionUpdateAsync(global::Tron.Net.Protocol.AccountPermissionUpdateContract request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_AccountPermissionUpdate, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.TransactionExtention AddSign(global::Tron.Net.Protocol.TransactionSign request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return AddSign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.TransactionExtention AddSign(global::Tron.Net.Protocol.TransactionSign request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_AddSign, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> AddSignAsync(global::Tron.Net.Protocol.TransactionSign request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return AddSignAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionExtention> AddSignAsync(global::Tron.Net.Protocol.TransactionSign request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_AddSign, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Tron.Net.Protocol.TransactionSignWeight GetTransactionSignWeight(global::Tron.Net.Protocol.Transaction request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
@@ -6715,6 +6659,66 @@ namespace Tron.Net.Protocol {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetBlock, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.PricesResponseMessage GetBandwidthPrices(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBandwidthPrices(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.PricesResponseMessage GetBandwidthPrices(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetBandwidthPrices, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.PricesResponseMessage> GetBandwidthPricesAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBandwidthPricesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.PricesResponseMessage> GetBandwidthPricesAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetBandwidthPrices, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.PricesResponseMessage GetEnergyPrices(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetEnergyPrices(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.PricesResponseMessage GetEnergyPrices(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetEnergyPrices, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.PricesResponseMessage> GetEnergyPricesAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetEnergyPricesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.PricesResponseMessage> GetEnergyPricesAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetEnergyPrices, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.PricesResponseMessage GetMemoFee(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMemoFee(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.PricesResponseMessage GetMemoFee(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetMemoFee, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.PricesResponseMessage> GetMemoFeeAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMemoFeeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.PricesResponseMessage> GetMemoFeeAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetMemoFee, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override WalletClient NewInstance(ClientBaseConfiguration configuration)
@@ -6757,12 +6761,18 @@ namespace Tron.Net.Protocol {
           .AddMethod(__Method_ParticipateAssetIssue2, serviceImpl.ParticipateAssetIssue2)
           .AddMethod(__Method_FreezeBalance, serviceImpl.FreezeBalance)
           .AddMethod(__Method_FreezeBalance2, serviceImpl.FreezeBalance2)
+          .AddMethod(__Method_FreezeBalanceV2, serviceImpl.FreezeBalanceV2)
           .AddMethod(__Method_UnfreezeBalance, serviceImpl.UnfreezeBalance)
           .AddMethod(__Method_UnfreezeBalance2, serviceImpl.UnfreezeBalance2)
+          .AddMethod(__Method_UnfreezeBalanceV2, serviceImpl.UnfreezeBalanceV2)
           .AddMethod(__Method_UnfreezeAsset, serviceImpl.UnfreezeAsset)
           .AddMethod(__Method_UnfreezeAsset2, serviceImpl.UnfreezeAsset2)
           .AddMethod(__Method_WithdrawBalance, serviceImpl.WithdrawBalance)
           .AddMethod(__Method_WithdrawBalance2, serviceImpl.WithdrawBalance2)
+          .AddMethod(__Method_WithdrawExpireUnfreeze, serviceImpl.WithdrawExpireUnfreeze)
+          .AddMethod(__Method_DelegateResource, serviceImpl.DelegateResource)
+          .AddMethod(__Method_UnDelegateResource, serviceImpl.UnDelegateResource)
+          .AddMethod(__Method_CancelAllUnfreezeV2, serviceImpl.CancelAllUnfreezeV2)
           .AddMethod(__Method_UpdateAsset, serviceImpl.UpdateAsset)
           .AddMethod(__Method_UpdateAsset2, serviceImpl.UpdateAsset2)
           .AddMethod(__Method_ProposalCreate, serviceImpl.ProposalCreate)
@@ -6805,10 +6815,16 @@ namespace Tron.Net.Protocol {
           .AddMethod(__Method_GetContractInfo, serviceImpl.GetContractInfo)
           .AddMethod(__Method_TriggerContract, serviceImpl.TriggerContract)
           .AddMethod(__Method_TriggerConstantContract, serviceImpl.TriggerConstantContract)
+          .AddMethod(__Method_EstimateEnergy, serviceImpl.EstimateEnergy)
           .AddMethod(__Method_ClearContractABI, serviceImpl.ClearContractABI)
           .AddMethod(__Method_ListWitnesses, serviceImpl.ListWitnesses)
           .AddMethod(__Method_GetDelegatedResource, serviceImpl.GetDelegatedResource)
+          .AddMethod(__Method_GetDelegatedResourceV2, serviceImpl.GetDelegatedResourceV2)
           .AddMethod(__Method_GetDelegatedResourceAccountIndex, serviceImpl.GetDelegatedResourceAccountIndex)
+          .AddMethod(__Method_GetDelegatedResourceAccountIndexV2, serviceImpl.GetDelegatedResourceAccountIndexV2)
+          .AddMethod(__Method_GetCanDelegatedMaxSize, serviceImpl.GetCanDelegatedMaxSize)
+          .AddMethod(__Method_GetAvailableUnfreezeCount, serviceImpl.GetAvailableUnfreezeCount)
+          .AddMethod(__Method_GetCanWithdrawUnfreezeAmount, serviceImpl.GetCanWithdrawUnfreezeAmount)
           .AddMethod(__Method_ListProposals, serviceImpl.ListProposals)
           .AddMethod(__Method_GetPaginatedProposalList, serviceImpl.GetPaginatedProposalList)
           .AddMethod(__Method_GetProposalById, serviceImpl.GetProposalById)
@@ -6820,17 +6836,8 @@ namespace Tron.Net.Protocol {
           .AddMethod(__Method_GetPaginatedAssetIssueList, serviceImpl.GetPaginatedAssetIssueList)
           .AddMethod(__Method_TotalTransaction, serviceImpl.TotalTransaction)
           .AddMethod(__Method_GetNextMaintenanceTime, serviceImpl.GetNextMaintenanceTime)
-          .AddMethod(__Method_GetTransactionSign, serviceImpl.GetTransactionSign)
-          .AddMethod(__Method_GetTransactionSign2, serviceImpl.GetTransactionSign2)
-          .AddMethod(__Method_CreateAddress, serviceImpl.CreateAddress)
-          .AddMethod(__Method_EasyTransferAsset, serviceImpl.EasyTransferAsset)
-          .AddMethod(__Method_EasyTransferAssetByPrivate, serviceImpl.EasyTransferAssetByPrivate)
-          .AddMethod(__Method_EasyTransfer, serviceImpl.EasyTransfer)
-          .AddMethod(__Method_EasyTransferByPrivate, serviceImpl.EasyTransferByPrivate)
-          .AddMethod(__Method_GenerateAddress, serviceImpl.GenerateAddress)
           .AddMethod(__Method_GetTransactionInfoById, serviceImpl.GetTransactionInfoById)
           .AddMethod(__Method_AccountPermissionUpdate, serviceImpl.AccountPermissionUpdate)
-          .AddMethod(__Method_AddSign, serviceImpl.AddSign)
           .AddMethod(__Method_GetTransactionSignWeight, serviceImpl.GetTransactionSignWeight)
           .AddMethod(__Method_GetTransactionApprovedList, serviceImpl.GetTransactionApprovedList)
           .AddMethod(__Method_GetNodeInfo, serviceImpl.GetNodeInfo)
@@ -6868,7 +6875,10 @@ namespace Tron.Net.Protocol {
           .AddMethod(__Method_GetTransactionFromPending, serviceImpl.GetTransactionFromPending)
           .AddMethod(__Method_GetTransactionListFromPending, serviceImpl.GetTransactionListFromPending)
           .AddMethod(__Method_GetPendingSize, serviceImpl.GetPendingSize)
-          .AddMethod(__Method_GetBlock, serviceImpl.GetBlock).Build();
+          .AddMethod(__Method_GetBlock, serviceImpl.GetBlock)
+          .AddMethod(__Method_GetBandwidthPrices, serviceImpl.GetBandwidthPrices)
+          .AddMethod(__Method_GetEnergyPrices, serviceImpl.GetEnergyPrices)
+          .AddMethod(__Method_GetMemoFee, serviceImpl.GetMemoFee).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -6906,12 +6916,18 @@ namespace Tron.Net.Protocol {
       serviceBinder.AddMethod(__Method_ParticipateAssetIssue2, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.ParticipateAssetIssueContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.ParticipateAssetIssue2));
       serviceBinder.AddMethod(__Method_FreezeBalance, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.FreezeBalanceContract, global::Tron.Net.Protocol.Transaction>(serviceImpl.FreezeBalance));
       serviceBinder.AddMethod(__Method_FreezeBalance2, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.FreezeBalanceContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.FreezeBalance2));
+      serviceBinder.AddMethod(__Method_FreezeBalanceV2, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.FreezeBalanceV2Contract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.FreezeBalanceV2));
       serviceBinder.AddMethod(__Method_UnfreezeBalance, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.UnfreezeBalanceContract, global::Tron.Net.Protocol.Transaction>(serviceImpl.UnfreezeBalance));
       serviceBinder.AddMethod(__Method_UnfreezeBalance2, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.UnfreezeBalanceContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.UnfreezeBalance2));
+      serviceBinder.AddMethod(__Method_UnfreezeBalanceV2, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.UnfreezeBalanceV2Contract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.UnfreezeBalanceV2));
       serviceBinder.AddMethod(__Method_UnfreezeAsset, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.UnfreezeAssetContract, global::Tron.Net.Protocol.Transaction>(serviceImpl.UnfreezeAsset));
       serviceBinder.AddMethod(__Method_UnfreezeAsset2, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.UnfreezeAssetContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.UnfreezeAsset2));
       serviceBinder.AddMethod(__Method_WithdrawBalance, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.WithdrawBalanceContract, global::Tron.Net.Protocol.Transaction>(serviceImpl.WithdrawBalance));
       serviceBinder.AddMethod(__Method_WithdrawBalance2, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.WithdrawBalanceContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.WithdrawBalance2));
+      serviceBinder.AddMethod(__Method_WithdrawExpireUnfreeze, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.WithdrawExpireUnfreezeContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.WithdrawExpireUnfreeze));
+      serviceBinder.AddMethod(__Method_DelegateResource, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.DelegateResourceContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.DelegateResource));
+      serviceBinder.AddMethod(__Method_UnDelegateResource, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.UnDelegateResourceContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.UnDelegateResource));
+      serviceBinder.AddMethod(__Method_CancelAllUnfreezeV2, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.CancelAllUnfreezeV2Contract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.CancelAllUnfreezeV2));
       serviceBinder.AddMethod(__Method_UpdateAsset, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.UpdateAssetContract, global::Tron.Net.Protocol.Transaction>(serviceImpl.UpdateAsset));
       serviceBinder.AddMethod(__Method_UpdateAsset2, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.UpdateAssetContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.UpdateAsset2));
       serviceBinder.AddMethod(__Method_ProposalCreate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.ProposalCreateContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.ProposalCreate));
@@ -6954,10 +6970,16 @@ namespace Tron.Net.Protocol {
       serviceBinder.AddMethod(__Method_GetContractInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.SmartContractDataWrapper>(serviceImpl.GetContractInfo));
       serviceBinder.AddMethod(__Method_TriggerContract, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.TriggerSmartContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.TriggerContract));
       serviceBinder.AddMethod(__Method_TriggerConstantContract, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.TriggerSmartContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.TriggerConstantContract));
+      serviceBinder.AddMethod(__Method_EstimateEnergy, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.TriggerSmartContract, global::Tron.Net.Protocol.EstimateEnergyMessage>(serviceImpl.EstimateEnergy));
       serviceBinder.AddMethod(__Method_ClearContractABI, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.ClearABIContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.ClearContractABI));
       serviceBinder.AddMethod(__Method_ListWitnesses, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.WitnessList>(serviceImpl.ListWitnesses));
       serviceBinder.AddMethod(__Method_GetDelegatedResource, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.DelegatedResourceMessage, global::Tron.Net.Protocol.DelegatedResourceList>(serviceImpl.GetDelegatedResource));
+      serviceBinder.AddMethod(__Method_GetDelegatedResourceV2, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.DelegatedResourceMessage, global::Tron.Net.Protocol.DelegatedResourceList>(serviceImpl.GetDelegatedResourceV2));
       serviceBinder.AddMethod(__Method_GetDelegatedResourceAccountIndex, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.DelegatedResourceAccountIndex>(serviceImpl.GetDelegatedResourceAccountIndex));
+      serviceBinder.AddMethod(__Method_GetDelegatedResourceAccountIndexV2, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.DelegatedResourceAccountIndex>(serviceImpl.GetDelegatedResourceAccountIndexV2));
+      serviceBinder.AddMethod(__Method_GetCanDelegatedMaxSize, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage, global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage>(serviceImpl.GetCanDelegatedMaxSize));
+      serviceBinder.AddMethod(__Method_GetAvailableUnfreezeCount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage, global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage>(serviceImpl.GetAvailableUnfreezeCount));
+      serviceBinder.AddMethod(__Method_GetCanWithdrawUnfreezeAmount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage, global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage>(serviceImpl.GetCanWithdrawUnfreezeAmount));
       serviceBinder.AddMethod(__Method_ListProposals, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.ProposalList>(serviceImpl.ListProposals));
       serviceBinder.AddMethod(__Method_GetPaginatedProposalList, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.PaginatedMessage, global::Tron.Net.Protocol.ProposalList>(serviceImpl.GetPaginatedProposalList));
       serviceBinder.AddMethod(__Method_GetProposalById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.Proposal>(serviceImpl.GetProposalById));
@@ -6969,17 +6991,8 @@ namespace Tron.Net.Protocol {
       serviceBinder.AddMethod(__Method_GetPaginatedAssetIssueList, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.PaginatedMessage, global::Tron.Net.Protocol.AssetIssueList>(serviceImpl.GetPaginatedAssetIssueList));
       serviceBinder.AddMethod(__Method_TotalTransaction, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NumberMessage>(serviceImpl.TotalTransaction));
       serviceBinder.AddMethod(__Method_GetNextMaintenanceTime, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NumberMessage>(serviceImpl.GetNextMaintenanceTime));
-      serviceBinder.AddMethod(__Method_GetTransactionSign, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.TransactionSign, global::Tron.Net.Protocol.Transaction>(serviceImpl.GetTransactionSign));
-      serviceBinder.AddMethod(__Method_GetTransactionSign2, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.TransactionSign, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.GetTransactionSign2));
-      serviceBinder.AddMethod(__Method_CreateAddress, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.BytesMessage>(serviceImpl.CreateAddress));
-      serviceBinder.AddMethod(__Method_EasyTransferAsset, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EasyTransferAssetMessage, global::Tron.Net.Protocol.EasyTransferResponse>(serviceImpl.EasyTransferAsset));
-      serviceBinder.AddMethod(__Method_EasyTransferAssetByPrivate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EasyTransferAssetByPrivateMessage, global::Tron.Net.Protocol.EasyTransferResponse>(serviceImpl.EasyTransferAssetByPrivate));
-      serviceBinder.AddMethod(__Method_EasyTransfer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EasyTransferMessage, global::Tron.Net.Protocol.EasyTransferResponse>(serviceImpl.EasyTransfer));
-      serviceBinder.AddMethod(__Method_EasyTransferByPrivate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EasyTransferByPrivateMessage, global::Tron.Net.Protocol.EasyTransferResponse>(serviceImpl.EasyTransferByPrivate));
-      serviceBinder.AddMethod(__Method_GenerateAddress, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.AddressPrKeyPairMessage>(serviceImpl.GenerateAddress));
       serviceBinder.AddMethod(__Method_GetTransactionInfoById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.TransactionInfo>(serviceImpl.GetTransactionInfoById));
       serviceBinder.AddMethod(__Method_AccountPermissionUpdate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.AccountPermissionUpdateContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.AccountPermissionUpdate));
-      serviceBinder.AddMethod(__Method_AddSign, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.TransactionSign, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.AddSign));
       serviceBinder.AddMethod(__Method_GetTransactionSignWeight, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.Transaction, global::Tron.Net.Protocol.TransactionSignWeight>(serviceImpl.GetTransactionSignWeight));
       serviceBinder.AddMethod(__Method_GetTransactionApprovedList, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.Transaction, global::Tron.Net.Protocol.TransactionApprovedList>(serviceImpl.GetTransactionApprovedList));
       serviceBinder.AddMethod(__Method_GetNodeInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NodeInfo>(serviceImpl.GetNodeInfo));
@@ -7018,6 +7031,9 @@ namespace Tron.Net.Protocol {
       serviceBinder.AddMethod(__Method_GetTransactionListFromPending, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.TransactionIdList>(serviceImpl.GetTransactionListFromPending));
       serviceBinder.AddMethod(__Method_GetPendingSize, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NumberMessage>(serviceImpl.GetPendingSize));
       serviceBinder.AddMethod(__Method_GetBlock, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BlockReq, global::Tron.Net.Protocol.BlockExtention>(serviceImpl.GetBlock));
+      serviceBinder.AddMethod(__Method_GetBandwidthPrices, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.PricesResponseMessage>(serviceImpl.GetBandwidthPrices));
+      serviceBinder.AddMethod(__Method_GetEnergyPrices, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.PricesResponseMessage>(serviceImpl.GetEnergyPrices));
+      serviceBinder.AddMethod(__Method_GetMemoFee, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.PricesResponseMessage>(serviceImpl.GetMemoFee));
     }
 
   }
@@ -7085,6 +7101,18 @@ namespace Tron.Net.Protocol {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.DelegatedResourceAccountIndex> __Marshaller_protocol_DelegatedResourceAccountIndex = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.DelegatedResourceAccountIndex.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage> __Marshaller_protocol_CanDelegatedMaxSizeRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage> __Marshaller_protocol_CanDelegatedMaxSizeResponseMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage> __Marshaller_protocol_GetAvailableUnfreezeCountRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage> __Marshaller_protocol_GetAvailableUnfreezeCountResponseMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage> __Marshaller_protocol_CanWithdrawUnfreezeAmountRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage> __Marshaller_protocol_CanWithdrawUnfreezeAmountResponseMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.Exchange> __Marshaller_protocol_Exchange = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.Exchange.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.ExchangeList> __Marshaller_protocol_ExchangeList = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.ExchangeList.Parser));
@@ -7092,8 +7120,6 @@ namespace Tron.Net.Protocol {
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.Transaction> __Marshaller_protocol_Transaction = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.Transaction.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.TransactionInfo> __Marshaller_protocol_TransactionInfo = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.TransactionInfo.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Tron.Net.Protocol.AddressPrKeyPairMessage> __Marshaller_protocol_AddressPrKeyPairMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.AddressPrKeyPairMessage.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.OutputPointInfo> __Marshaller_protocol_OutputPointInfo = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.OutputPointInfo.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -7127,6 +7153,8 @@ namespace Tron.Net.Protocol {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.TransactionExtention> __Marshaller_protocol_TransactionExtention = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.TransactionExtention.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.EstimateEnergyMessage> __Marshaller_protocol_EstimateEnergyMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.EstimateEnergyMessage.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.TransactionInfoList> __Marshaller_protocol_TransactionInfoList = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.TransactionInfoList.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.MarketOrder> __Marshaller_protocol_MarketOrder = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.MarketOrder.Parser));
@@ -7140,6 +7168,8 @@ namespace Tron.Net.Protocol {
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.MarketOrderPairList> __Marshaller_protocol_MarketOrderPairList = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.MarketOrderPairList.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Tron.Net.Protocol.BlockReq> __Marshaller_protocol_BlockReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.BlockReq.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Tron.Net.Protocol.PricesResponseMessage> __Marshaller_protocol_PricesResponseMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Tron.Net.Protocol.PricesResponseMessage.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tron.Net.Protocol.Account, global::Tron.Net.Protocol.Account> __Method_GetAccount = new grpc::Method<global::Tron.Net.Protocol.Account, global::Tron.Net.Protocol.Account>(
@@ -7254,12 +7284,52 @@ namespace Tron.Net.Protocol {
         __Marshaller_protocol_DelegatedResourceList);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.DelegatedResourceMessage, global::Tron.Net.Protocol.DelegatedResourceList> __Method_GetDelegatedResourceV2 = new grpc::Method<global::Tron.Net.Protocol.DelegatedResourceMessage, global::Tron.Net.Protocol.DelegatedResourceList>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetDelegatedResourceV2",
+        __Marshaller_protocol_DelegatedResourceMessage,
+        __Marshaller_protocol_DelegatedResourceList);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.DelegatedResourceAccountIndex> __Method_GetDelegatedResourceAccountIndex = new grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.DelegatedResourceAccountIndex>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetDelegatedResourceAccountIndex",
         __Marshaller_protocol_BytesMessage,
         __Marshaller_protocol_DelegatedResourceAccountIndex);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.DelegatedResourceAccountIndex> __Method_GetDelegatedResourceAccountIndexV2 = new grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.DelegatedResourceAccountIndex>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetDelegatedResourceAccountIndexV2",
+        __Marshaller_protocol_BytesMessage,
+        __Marshaller_protocol_DelegatedResourceAccountIndex);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage, global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage> __Method_GetCanDelegatedMaxSize = new grpc::Method<global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage, global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetCanDelegatedMaxSize",
+        __Marshaller_protocol_CanDelegatedMaxSizeRequestMessage,
+        __Marshaller_protocol_CanDelegatedMaxSizeResponseMessage);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage, global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage> __Method_GetAvailableUnfreezeCount = new grpc::Method<global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage, global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetAvailableUnfreezeCount",
+        __Marshaller_protocol_GetAvailableUnfreezeCountRequestMessage,
+        __Marshaller_protocol_GetAvailableUnfreezeCountResponseMessage);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage, global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage> __Method_GetCanWithdrawUnfreezeAmount = new grpc::Method<global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage, global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetCanWithdrawUnfreezeAmount",
+        __Marshaller_protocol_CanWithdrawUnfreezeAmountRequestMessage,
+        __Marshaller_protocol_CanWithdrawUnfreezeAmountResponseMessage);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.Exchange> __Method_GetExchangeById = new grpc::Method<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.Exchange>(
@@ -7292,14 +7362,6 @@ namespace Tron.Net.Protocol {
         "GetTransactionInfoById",
         __Marshaller_protocol_BytesMessage,
         __Marshaller_protocol_TransactionInfo);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.AddressPrKeyPairMessage> __Method_GenerateAddress = new grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.AddressPrKeyPairMessage>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GenerateAddress",
-        __Marshaller_protocol_EmptyMessage,
-        __Marshaller_protocol_AddressPrKeyPairMessage);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tron.Net.Protocol.OutputPointInfo, global::Tron.Net.Protocol.IncrementalMerkleVoucherInfo> __Method_GetMerkleTreeVoucherInfo = new grpc::Method<global::Tron.Net.Protocol.OutputPointInfo, global::Tron.Net.Protocol.IncrementalMerkleVoucherInfo>(
@@ -7390,6 +7452,14 @@ namespace Tron.Net.Protocol {
         __Marshaller_protocol_TransactionExtention);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.TriggerSmartContract, global::Tron.Net.Protocol.EstimateEnergyMessage> __Method_EstimateEnergy = new grpc::Method<global::Tron.Net.Protocol.TriggerSmartContract, global::Tron.Net.Protocol.EstimateEnergyMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "EstimateEnergy",
+        __Marshaller_protocol_TriggerSmartContract,
+        __Marshaller_protocol_EstimateEnergyMessage);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Tron.Net.Protocol.NumberMessage, global::Tron.Net.Protocol.TransactionInfoList> __Method_GetTransactionInfoByBlockNum = new grpc::Method<global::Tron.Net.Protocol.NumberMessage, global::Tron.Net.Protocol.TransactionInfoList>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -7452,6 +7522,22 @@ namespace Tron.Net.Protocol {
         "GetBlock",
         __Marshaller_protocol_BlockReq,
         __Marshaller_protocol_BlockExtention);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.PricesResponseMessage> __Method_GetBandwidthPrices = new grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.PricesResponseMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetBandwidthPrices",
+        __Marshaller_protocol_EmptyMessage,
+        __Marshaller_protocol_PricesResponseMessage);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.PricesResponseMessage> __Method_GetEnergyPrices = new grpc::Method<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.PricesResponseMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetEnergyPrices",
+        __Marshaller_protocol_EmptyMessage,
+        __Marshaller_protocol_PricesResponseMessage);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -7572,7 +7658,37 @@ namespace Tron.Net.Protocol {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.DelegatedResourceList> GetDelegatedResourceV2(global::Tron.Net.Protocol.DelegatedResourceMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.DelegatedResourceAccountIndex> GetDelegatedResourceAccountIndex(global::Tron.Net.Protocol.BytesMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.DelegatedResourceAccountIndex> GetDelegatedResourceAccountIndexV2(global::Tron.Net.Protocol.BytesMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage> GetCanDelegatedMaxSize(global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage> GetAvailableUnfreezeCount(global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage> GetCanWithdrawUnfreezeAmount(global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -7597,18 +7713,6 @@ namespace Tron.Net.Protocol {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionInfo> GetTransactionInfoById(global::Tron.Net.Protocol.BytesMessage request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.AddressPrKeyPairMessage> GenerateAddress(global::Tron.Net.Protocol.EmptyMessage request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -7680,6 +7784,12 @@ namespace Tron.Net.Protocol {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.EstimateEnergyMessage> EstimateEnergy(global::Tron.Net.Protocol.TriggerSmartContract request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.TransactionInfoList> GetTransactionInfoByBlockNum(global::Tron.Net.Protocol.NumberMessage request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -7723,6 +7833,18 @@ namespace Tron.Net.Protocol {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.BlockExtention> GetBlock(global::Tron.Net.Protocol.BlockReq request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.PricesResponseMessage> GetBandwidthPrices(global::Tron.Net.Protocol.EmptyMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Tron.Net.Protocol.PricesResponseMessage> GetEnergyPrices(global::Tron.Net.Protocol.EmptyMessage request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -8149,6 +8271,26 @@ namespace Tron.Net.Protocol {
         return CallInvoker.AsyncUnaryCall(__Method_GetDelegatedResource, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.DelegatedResourceList GetDelegatedResourceV2(global::Tron.Net.Protocol.DelegatedResourceMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDelegatedResourceV2(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.DelegatedResourceList GetDelegatedResourceV2(global::Tron.Net.Protocol.DelegatedResourceMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetDelegatedResourceV2, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.DelegatedResourceList> GetDelegatedResourceV2Async(global::Tron.Net.Protocol.DelegatedResourceMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDelegatedResourceV2Async(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.DelegatedResourceList> GetDelegatedResourceV2Async(global::Tron.Net.Protocol.DelegatedResourceMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetDelegatedResourceV2, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Tron.Net.Protocol.DelegatedResourceAccountIndex GetDelegatedResourceAccountIndex(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetDelegatedResourceAccountIndex(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -8167,6 +8309,86 @@ namespace Tron.Net.Protocol {
       public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.DelegatedResourceAccountIndex> GetDelegatedResourceAccountIndexAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetDelegatedResourceAccountIndex, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.DelegatedResourceAccountIndex GetDelegatedResourceAccountIndexV2(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDelegatedResourceAccountIndexV2(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.DelegatedResourceAccountIndex GetDelegatedResourceAccountIndexV2(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetDelegatedResourceAccountIndexV2, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.DelegatedResourceAccountIndex> GetDelegatedResourceAccountIndexV2Async(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDelegatedResourceAccountIndexV2Async(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.DelegatedResourceAccountIndex> GetDelegatedResourceAccountIndexV2Async(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetDelegatedResourceAccountIndexV2, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage GetCanDelegatedMaxSize(global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetCanDelegatedMaxSize(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage GetCanDelegatedMaxSize(global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetCanDelegatedMaxSize, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage> GetCanDelegatedMaxSizeAsync(global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetCanDelegatedMaxSizeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage> GetCanDelegatedMaxSizeAsync(global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetCanDelegatedMaxSize, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage GetAvailableUnfreezeCount(global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetAvailableUnfreezeCount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage GetAvailableUnfreezeCount(global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetAvailableUnfreezeCount, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage> GetAvailableUnfreezeCountAsync(global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetAvailableUnfreezeCountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage> GetAvailableUnfreezeCountAsync(global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetAvailableUnfreezeCount, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage GetCanWithdrawUnfreezeAmount(global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetCanWithdrawUnfreezeAmount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage GetCanWithdrawUnfreezeAmount(global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetCanWithdrawUnfreezeAmount, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage> GetCanWithdrawUnfreezeAmountAsync(global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetCanWithdrawUnfreezeAmountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage> GetCanWithdrawUnfreezeAmountAsync(global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetCanWithdrawUnfreezeAmount, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Tron.Net.Protocol.Exchange GetExchangeById(global::Tron.Net.Protocol.BytesMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
@@ -8247,54 +8469,6 @@ namespace Tron.Net.Protocol {
       public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.TransactionInfo> GetTransactionInfoByIdAsync(global::Tron.Net.Protocol.BytesMessage request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetTransactionInfoById, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.AddressPrKeyPairMessage GenerateAddress(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GenerateAddress(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Tron.Net.Protocol.AddressPrKeyPairMessage GenerateAddress(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GenerateAddress, null, options, request);
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.AddressPrKeyPairMessage> GenerateAddressAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GenerateAddressAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      ///Warning: do not invoke this interface provided by others.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.AddressPrKeyPairMessage> GenerateAddressAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GenerateAddress, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Tron.Net.Protocol.IncrementalMerkleVoucherInfo GetMerkleTreeVoucherInfo(global::Tron.Net.Protocol.OutputPointInfo request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
@@ -8517,6 +8691,26 @@ namespace Tron.Net.Protocol {
         return CallInvoker.AsyncUnaryCall(__Method_TriggerConstantContract, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.EstimateEnergyMessage EstimateEnergy(global::Tron.Net.Protocol.TriggerSmartContract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return EstimateEnergy(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.EstimateEnergyMessage EstimateEnergy(global::Tron.Net.Protocol.TriggerSmartContract request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_EstimateEnergy, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.EstimateEnergyMessage> EstimateEnergyAsync(global::Tron.Net.Protocol.TriggerSmartContract request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return EstimateEnergyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.EstimateEnergyMessage> EstimateEnergyAsync(global::Tron.Net.Protocol.TriggerSmartContract request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_EstimateEnergy, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Tron.Net.Protocol.TransactionInfoList GetTransactionInfoByBlockNum(global::Tron.Net.Protocol.NumberMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetTransactionInfoByBlockNum(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -8676,6 +8870,46 @@ namespace Tron.Net.Protocol {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetBlock, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.PricesResponseMessage GetBandwidthPrices(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBandwidthPrices(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.PricesResponseMessage GetBandwidthPrices(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetBandwidthPrices, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.PricesResponseMessage> GetBandwidthPricesAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBandwidthPricesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.PricesResponseMessage> GetBandwidthPricesAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetBandwidthPrices, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.PricesResponseMessage GetEnergyPrices(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetEnergyPrices(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Tron.Net.Protocol.PricesResponseMessage GetEnergyPrices(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetEnergyPrices, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.PricesResponseMessage> GetEnergyPricesAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetEnergyPricesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Tron.Net.Protocol.PricesResponseMessage> GetEnergyPricesAsync(global::Tron.Net.Protocol.EmptyMessage request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetEnergyPrices, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override WalletSolidityClient NewInstance(ClientBaseConfiguration configuration)
@@ -8704,12 +8938,16 @@ namespace Tron.Net.Protocol {
           .AddMethod(__Method_GetBlockByNum2, serviceImpl.GetBlockByNum2)
           .AddMethod(__Method_GetTransactionCountByBlockNum, serviceImpl.GetTransactionCountByBlockNum)
           .AddMethod(__Method_GetDelegatedResource, serviceImpl.GetDelegatedResource)
+          .AddMethod(__Method_GetDelegatedResourceV2, serviceImpl.GetDelegatedResourceV2)
           .AddMethod(__Method_GetDelegatedResourceAccountIndex, serviceImpl.GetDelegatedResourceAccountIndex)
+          .AddMethod(__Method_GetDelegatedResourceAccountIndexV2, serviceImpl.GetDelegatedResourceAccountIndexV2)
+          .AddMethod(__Method_GetCanDelegatedMaxSize, serviceImpl.GetCanDelegatedMaxSize)
+          .AddMethod(__Method_GetAvailableUnfreezeCount, serviceImpl.GetAvailableUnfreezeCount)
+          .AddMethod(__Method_GetCanWithdrawUnfreezeAmount, serviceImpl.GetCanWithdrawUnfreezeAmount)
           .AddMethod(__Method_GetExchangeById, serviceImpl.GetExchangeById)
           .AddMethod(__Method_ListExchanges, serviceImpl.ListExchanges)
           .AddMethod(__Method_GetTransactionById, serviceImpl.GetTransactionById)
           .AddMethod(__Method_GetTransactionInfoById, serviceImpl.GetTransactionInfoById)
-          .AddMethod(__Method_GenerateAddress, serviceImpl.GenerateAddress)
           .AddMethod(__Method_GetMerkleTreeVoucherInfo, serviceImpl.GetMerkleTreeVoucherInfo)
           .AddMethod(__Method_ScanNoteByIvk, serviceImpl.ScanNoteByIvk)
           .AddMethod(__Method_ScanAndMarkNoteByIvk, serviceImpl.ScanAndMarkNoteByIvk)
@@ -8721,6 +8959,7 @@ namespace Tron.Net.Protocol {
           .AddMethod(__Method_GetRewardInfo, serviceImpl.GetRewardInfo)
           .AddMethod(__Method_GetBrokerageInfo, serviceImpl.GetBrokerageInfo)
           .AddMethod(__Method_TriggerConstantContract, serviceImpl.TriggerConstantContract)
+          .AddMethod(__Method_EstimateEnergy, serviceImpl.EstimateEnergy)
           .AddMethod(__Method_GetTransactionInfoByBlockNum, serviceImpl.GetTransactionInfoByBlockNum)
           .AddMethod(__Method_GetMarketOrderById, serviceImpl.GetMarketOrderById)
           .AddMethod(__Method_GetMarketOrderByAccount, serviceImpl.GetMarketOrderByAccount)
@@ -8728,7 +8967,9 @@ namespace Tron.Net.Protocol {
           .AddMethod(__Method_GetMarketOrderListByPair, serviceImpl.GetMarketOrderListByPair)
           .AddMethod(__Method_GetMarketPairList, serviceImpl.GetMarketPairList)
           .AddMethod(__Method_GetBurnTrx, serviceImpl.GetBurnTrx)
-          .AddMethod(__Method_GetBlock, serviceImpl.GetBlock).Build();
+          .AddMethod(__Method_GetBlock, serviceImpl.GetBlock)
+          .AddMethod(__Method_GetBandwidthPrices, serviceImpl.GetBandwidthPrices)
+          .AddMethod(__Method_GetEnergyPrices, serviceImpl.GetEnergyPrices).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -8752,12 +8993,16 @@ namespace Tron.Net.Protocol {
       serviceBinder.AddMethod(__Method_GetBlockByNum2, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.NumberMessage, global::Tron.Net.Protocol.BlockExtention>(serviceImpl.GetBlockByNum2));
       serviceBinder.AddMethod(__Method_GetTransactionCountByBlockNum, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.NumberMessage, global::Tron.Net.Protocol.NumberMessage>(serviceImpl.GetTransactionCountByBlockNum));
       serviceBinder.AddMethod(__Method_GetDelegatedResource, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.DelegatedResourceMessage, global::Tron.Net.Protocol.DelegatedResourceList>(serviceImpl.GetDelegatedResource));
+      serviceBinder.AddMethod(__Method_GetDelegatedResourceV2, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.DelegatedResourceMessage, global::Tron.Net.Protocol.DelegatedResourceList>(serviceImpl.GetDelegatedResourceV2));
       serviceBinder.AddMethod(__Method_GetDelegatedResourceAccountIndex, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.DelegatedResourceAccountIndex>(serviceImpl.GetDelegatedResourceAccountIndex));
+      serviceBinder.AddMethod(__Method_GetDelegatedResourceAccountIndexV2, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.DelegatedResourceAccountIndex>(serviceImpl.GetDelegatedResourceAccountIndexV2));
+      serviceBinder.AddMethod(__Method_GetCanDelegatedMaxSize, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.CanDelegatedMaxSizeRequestMessage, global::Tron.Net.Protocol.CanDelegatedMaxSizeResponseMessage>(serviceImpl.GetCanDelegatedMaxSize));
+      serviceBinder.AddMethod(__Method_GetAvailableUnfreezeCount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.GetAvailableUnfreezeCountRequestMessage, global::Tron.Net.Protocol.GetAvailableUnfreezeCountResponseMessage>(serviceImpl.GetAvailableUnfreezeCount));
+      serviceBinder.AddMethod(__Method_GetCanWithdrawUnfreezeAmount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountRequestMessage, global::Tron.Net.Protocol.CanWithdrawUnfreezeAmountResponseMessage>(serviceImpl.GetCanWithdrawUnfreezeAmount));
       serviceBinder.AddMethod(__Method_GetExchangeById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.Exchange>(serviceImpl.GetExchangeById));
       serviceBinder.AddMethod(__Method_ListExchanges, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.ExchangeList>(serviceImpl.ListExchanges));
       serviceBinder.AddMethod(__Method_GetTransactionById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.Transaction>(serviceImpl.GetTransactionById));
       serviceBinder.AddMethod(__Method_GetTransactionInfoById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.TransactionInfo>(serviceImpl.GetTransactionInfoById));
-      serviceBinder.AddMethod(__Method_GenerateAddress, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.AddressPrKeyPairMessage>(serviceImpl.GenerateAddress));
       serviceBinder.AddMethod(__Method_GetMerkleTreeVoucherInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.OutputPointInfo, global::Tron.Net.Protocol.IncrementalMerkleVoucherInfo>(serviceImpl.GetMerkleTreeVoucherInfo));
       serviceBinder.AddMethod(__Method_ScanNoteByIvk, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.IvkDecryptParameters, global::Tron.Net.Protocol.DecryptNotes>(serviceImpl.ScanNoteByIvk));
       serviceBinder.AddMethod(__Method_ScanAndMarkNoteByIvk, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.IvkDecryptAndMarkParameters, global::Tron.Net.Protocol.DecryptNotesMarked>(serviceImpl.ScanAndMarkNoteByIvk));
@@ -8769,6 +9014,7 @@ namespace Tron.Net.Protocol {
       serviceBinder.AddMethod(__Method_GetRewardInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.NumberMessage>(serviceImpl.GetRewardInfo));
       serviceBinder.AddMethod(__Method_GetBrokerageInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.NumberMessage>(serviceImpl.GetBrokerageInfo));
       serviceBinder.AddMethod(__Method_TriggerConstantContract, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.TriggerSmartContract, global::Tron.Net.Protocol.TransactionExtention>(serviceImpl.TriggerConstantContract));
+      serviceBinder.AddMethod(__Method_EstimateEnergy, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.TriggerSmartContract, global::Tron.Net.Protocol.EstimateEnergyMessage>(serviceImpl.EstimateEnergy));
       serviceBinder.AddMethod(__Method_GetTransactionInfoByBlockNum, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.NumberMessage, global::Tron.Net.Protocol.TransactionInfoList>(serviceImpl.GetTransactionInfoByBlockNum));
       serviceBinder.AddMethod(__Method_GetMarketOrderById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.MarketOrder>(serviceImpl.GetMarketOrderById));
       serviceBinder.AddMethod(__Method_GetMarketOrderByAccount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BytesMessage, global::Tron.Net.Protocol.MarketOrderList>(serviceImpl.GetMarketOrderByAccount));
@@ -8777,6 +9023,8 @@ namespace Tron.Net.Protocol {
       serviceBinder.AddMethod(__Method_GetMarketPairList, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.MarketOrderPairList>(serviceImpl.GetMarketPairList));
       serviceBinder.AddMethod(__Method_GetBurnTrx, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.NumberMessage>(serviceImpl.GetBurnTrx));
       serviceBinder.AddMethod(__Method_GetBlock, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.BlockReq, global::Tron.Net.Protocol.BlockExtention>(serviceImpl.GetBlock));
+      serviceBinder.AddMethod(__Method_GetBandwidthPrices, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.PricesResponseMessage>(serviceImpl.GetBandwidthPrices));
+      serviceBinder.AddMethod(__Method_GetEnergyPrices, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Tron.Net.Protocol.EmptyMessage, global::Tron.Net.Protocol.PricesResponseMessage>(serviceImpl.GetEnergyPrices));
     }
 
   }
